@@ -1,0 +1,33 @@
+.a-tag{
+    background: $bg-primary;
+    @include f-12-white-semibold;
+    height: 24px;
+    padding: 0 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    position: relative;
+    margin-left: 0px;
+}
+.a-tag.-sale{
+    background: $bg-red;
+}
+.a-tag.-new{
+    background: $bg-yellow;
+}
+.a-tag.-recommended{
+    background: $bg-pink;
+}
+.a-tag.-top{
+    background: $bg-blue;
+}
+
+@media screen and (max-width: 991px){
+    .a-tag{
+        height: 20px;
+        padding: 0 5px;
+        margin-bottom: 3px;
+    }
+}

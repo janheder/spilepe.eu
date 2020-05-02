@@ -1,0 +1,70 @@
+.o-header{
+    background: $bg-white;
+    position: relative;
+    z-index: 4;
+    padding-top: 4px;
+
+    &::after {
+        content: "";
+        background: url(../img/border-stripes.svg);
+        height: 5px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+    .o-header.-cart{
+        .o-navProducts{
+            display: none;
+        }
+    }
+}
+
+.o-headerNav{
+    background: $bg-primary;
+    height: 34px;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.o-headerNav__link{
+    margin-right: 30px;
+    color: $text-white;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.o-headerNav__contact{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    
+}
+.o-headerNav__contactSingle{
+    display: flex;
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+    color: $text-white;
+}
+.o-headerNav__contactIcon{
+    height: 16px;
+    width: 16px;
+}
+.o-headerNav__contactText{
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 991px){
+    .o-headerNav{
+        display: none;
+    }
+}

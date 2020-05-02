@@ -1,0 +1,91 @@
+/* ========================================================================== */
+/* Descriptive Colors */
+/* ========================================================================== */
+
+$white: #FFFFFF;
+$grey-light: #EDF5FE;
+$grey: #E5E5E5;
+$grey-medium: #8D8D8D;
+$grey-dark: #4E5055;
+$grey-deep: #262626;
+$black: #000000;
+
+$red: #D00109;
+$red-dark: #971410;
+
+$green: #64A820;
+$green-dark: #548D1B;
+
+$yellow: #FEA800;
+$yellow-dark: #E3A513;
+
+$blue: #002766;
+$blue-dark: #00235C;
+
+$pink: #FF85C0;
+$pink-dark: #E76CB0;
+
+$purple: #915DBF;
+$purple-dark: #915DBF;
+
+/* ========================================================================== */
+/* Variables */
+/* ========================================================================== */
+
+$box-shadow-primary: 0px 3px 8px 0px rgba(0,0,0,0.05);
+
+// Border radius
+$border-radius-primary: 4px;
+$border-radius-round: 50%;                        
+
+// Brand colors
+$brand-primary: $pink;
+$brand-primary--dark: $pink-dark;
+$brand-secondary: $blue;
+
+// Border color
+$border-primary: $grey-deep;
+$border-brand: $red;
+$border-brand-dark: $red-dark;
+$border-brand-secondary: $green;
+$border-dark: $grey-dark;
+$border-medium: $grey-medium;
+$border-grey: $grey;
+$border-white: $white;
+$border-red: $red;
+$border-green: $green;
+$border-yellow: $yellow;
+$border-blue: $blue;
+$border-light: $grey-light;
+
+// Text colors
+$text-primary: $grey-deep;
+$text-brand: $blue;
+$text-brand-dark: $red-dark;
+$text-brand-secondary: $green;
+$text-dark: $grey-dark;
+$text-medium: $grey-medium;
+$text-white: $white;
+$text-red: $red;
+$text-green: $green;
+$text-yellow: $yellow;
+$text-blue: $blue;
+
+// Backgorund colors
+$bg-primary: $blue;
+$bg-brand: $blue;
+$bg-brand-dark: $blue-dark;
+$bg-brand-secondary: $green;
+$bg-brand-secondary-dark: $green-dark;
+$bg-grey: $grey;
+$bg-white: $white;
+$bg-light: $grey-light;
+$bg-medium: $grey-medium;
+$bg-dark: $grey-dark;
+$bg-black: $black;
+$bg-red: $red;
+$bg-green: $green;
+$bg-yellow: $yellow;
+$bg-blue: $blue;
+$bg-pink: $pink;
+

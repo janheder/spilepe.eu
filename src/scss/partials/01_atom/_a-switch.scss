@@ -1,0 +1,36 @@
+.a-switch{
+    height: 14px;
+    width: 24px;
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+    display: block;
+    flex-shrink: 0;
+    margin-top: 4px;
+    z-index: 1;
+
+    &::before{
+        content: "";
+        position: absolute;
+        height: 14px;
+        width: 100%;
+        background: $bg-primary;
+        opacity: 0.3;
+        border-radius: 7px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 0.2s ease all;
+    }
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        transition: 0.2s ease all;
+        border-radius: 50%;
+        background: $bg-white;
+        left: 1px;
+        top: 1px;
+    }
+}
