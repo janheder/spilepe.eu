@@ -3,7 +3,7 @@
 /* ========================================================================== */
 
 $white: #FFFFFF;
-$grey-light: #EDF5FE;
+$grey-light: #f5f5f5;
 $grey: #E5E5E5;
 $grey-medium: #8D8D8D;
 $grey-dark: #4E5055;
@@ -35,7 +35,7 @@ $purple-dark: #915DBF;
 $box-shadow-primary: 0px 3px 8px 0px rgba(0,0,0,0.05);
 
 // Border radius
-$border-radius-primary: 4px;
+$border-radius-primary: 0px;
 $border-radius-round: 50%;                        
 
 // Brand colors
@@ -73,8 +73,9 @@ $text-blue: $blue;
 
 // Backgorund colors
 $bg-primary: $blue;
-$bg-brand: $blue;
-$bg-brand-dark: $blue-dark;
+$bg-primary-dark: $blue-dark;
+$bg-brand: $pink;
+$bg-brand-dark: $pink-dark;
 $bg-brand-secondary: $green;
 $bg-brand-secondary-dark: $green-dark;
 $bg-grey: $grey;

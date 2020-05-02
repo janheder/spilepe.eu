@@ -1,5 +1,5 @@
 .o-navMain{
-    background: $bg-white;
+    background: $bg-primary;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -9,6 +9,12 @@
     position: relative;
     max-width: 1920px;
     margin: 0 auto;
+}
+.o-navMain__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 @media screen and (max-width:991px){
     .o-navMain{

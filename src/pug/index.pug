@@ -62,176 +62,148 @@ html(lang=lang)
                     .swiper-button-next.o-hero__swiperButton.-next
 
 
-        section.o-sectionPoints
-            .o-sectionPoints__inner
-                .container.o-sectionPoints__container
-                    .o-sectionPoints__wrap
-                        .o-sectionPoints__single
-                            .o-sectionPoints__imgWrap
-                                img.o-sectionPoints__img(src=URLbase+"img/location.svg" alt="" title="")
-                            .o-sectionPoints__titleWrap
-                                h5.o-sectionPoints__title Doprava zdarma 
-                                p.o-sectionPoints__text nad 8000 Kč
-
-                        .o-sectionPoints__single
-                            .o-sectionPoints__imgWrap.--pink
-                                img.o-sectionPoints__img(src=URLbase+"img/delivery.svg" alt="" title="")
-                            .o-sectionPoints__titleWrap
-                                h5.o-sectionPoints__title 4527 produktů
-                                p.o-sectionPoints__text skladem
-
-                        .o-sectionPoints__single
-                            .o-sectionPoints__imgWrap.--purple
-                                img.o-sectionPoints__img(src=URLbase+"img/phone.svg" alt="" title="")
-                            .o-sectionPoints__titleWrap
-                                h5.o-sectionPoints__title Vrácení zboží
-                                p.o-sectionPoints__text zdarma do 30 dnů
-
-                        .o-sectionPoints__single
-                            .o-sectionPoints__imgWrap.--orange
-                                img.o-sectionPoints__img(src=URLbase+"img/stock.svg" alt="" title="")
-                            .o-sectionPoints__titleWrap
-                                h5.o-sectionPoints__title 20 let s vámi
-                                p.o-sectionPoints__text na českém trhu
-
-        section.o-sectionBanners
+        main
             .container
-                .row   
-                    .col-12.col-md-6
-                        a.o-sectionBanners__link.b-bgCover__wrap(href="#")
-                            img.o-sectionBanners__img(src=URLbase+"img/index-banner1.jpg" alt="" title="")
+                .mainWrapper
 
-                    .col-12.col-md-6
-                        a.o-sectionBanners__link.b-bgCover__wrap(href="#")
-                            img.o-sectionBanners__img(src=URLbase+"img/index-banner2.jpg" alt="" title="")
+                    section.o-sectionBanners
+                        .container
+                            .row   
+                                .col-12.col-md-6
+                                    a.o-sectionBanners__link.b-bgCover__wrap(href="#")
+                                        img.o-sectionBanners__img(src=URLbase+"img/index-banner1.jpg" alt="" title="")
 
-
-
-
-        section.o-sectionCategories
-            .container
-                h1.o-sectionCategories__title Populární kategorie
-                .row    
-                    - for (var i=0; i<3; i++)
-                        .col-12.col-md-4
-                            a.o-sectionCategories__single.m-categoryCell(href="#")
-                                img.m-categoryCell__img(src=URLbase+"img/product-thumb-medium.jpg" alt="#" title="#")
-                                h3.m-categoryCell__title Dětské postýlky
-                                p.m-categoryCell__text Kovová konstrukce na dětskou dřevěnou postýlku slouží jako držák na nebesa.Kovová konstrukce jde připevnit ke každému typu dětské postýlky 
-                                span.btn.-ghost Zobrazit nabídku
+                                .col-12.col-md-6
+                                    a.o-sectionBanners__link.b-bgCover__wrap(href="#")
+                                        img.o-sectionBanners__img(src=URLbase+"img/index-banner2.jpg" alt="" title="")
 
 
 
 
+                    section.o-sectionCategories
+                        .container
+                            h1.o-sectionCategories__title Populární kategorie
+                            .row    
+                                - for (var i=0; i<3; i++)
+                                    .col-12.col-md-4
+                                        a.o-sectionCategories__single.m-categoryCell(href="#")
+                                            img.m-categoryCell__img(src=URLbase+"img/product-thumb-medium.jpg" alt="#" title="#")
+                                            h3.m-categoryCell__title Dětské postýlky
+                                            p.m-categoryCell__text Kovová konstrukce na dětskou dřevěnou postýlku slouží jako držák na nebesa.Kovová konstrukce jde připevnit ke každému typu dětské postýlky 
+                                            span.btn.-ghost Zobrazit nabídku
 
-        section.o-sectionSale
-            .container
-                h1.o-sectionSale__title Akční nabídka
 
-                .o-sectionSale.m-productCarousel(id="product_swiper")
-                    .m-productCarousel__content
-                        .swiper-wrapper.m-productCarousel__wrap
 
-                            .swiper-slide.m-productCarousel__slide
-                                include partials/_single-product-cell.pug
-                            .swiper-slide.m-productCarousel__slide
-                                include partials/_single-product-cell.pug
-                            .swiper-slide.m-productCarousel__slide
-                                include partials/_single-product-cell.pug
-                            .swiper-slide.m-productCarousel__slide
-                                include partials/_single-product-cell.pug
-                            .swiper-slide.m-productCarousel__slide
-                                include partials/_single-product-cell.pug
+
+
+                    section.o-sectionSale
+                        .container
+                            h1.o-sectionSale__title Akční nabídka
+
+                            .o-sectionSale.m-productCarousel(id="product_swiper")
+                                .m-productCarousel__content
+                                    .swiper-wrapper.m-productCarousel__wrap
+
+                                        .swiper-slide.m-productCarousel__slide
+                                            include partials/_single-product-cell.pug
+                                        .swiper-slide.m-productCarousel__slide
+                                            include partials/_single-product-cell.pug
+                                        .swiper-slide.m-productCarousel__slide
+                                            include partials/_single-product-cell.pug
+                                        .swiper-slide.m-productCarousel__slide
+                                            include partials/_single-product-cell.pug
+                                        .swiper-slide.m-productCarousel__slide
+                                            include partials/_single-product-cell.pug
+                                    
+                                .swiper-button-prev.m-productCarousel__swiperButton.-prev
+                                .swiper-button-next.m-productCarousel__swiperButton.-next
+
+                    section.o-sectionProducts.o-tabs
+
+                        nav.o-tabs__nav.m-tabsNav
+                            .container  
+                                .nav.nav-tabs.m-tabsNav__nav(role="tablist")
+                            
+                                    a.m-tabsNav__link.active(id="index-1-tab" data-toggle="tab" href="#index-1" role="tab" aria-controls="index-1" aria-selected="true") Doporučené
+                            
+                                    a.m-tabsNav__link(id="index-2-tab" data-toggle="tab" href="#index-2" role="tab" aria-controls="index-2" aria-selected="false") Novinky
                         
-                    .swiper-button-prev.m-productCarousel__swiperButton.-prev
-                    .swiper-button-next.m-productCarousel__swiperButton.-next
+                                    a.m-tabsNav__link(id="index-3-tab" data-toggle="tab" href="#index-3" role="tab" aria-controls="index-3" aria-selected="false") Nejprodávanější
 
-        section.o-sectionProducts.o-tabs
+                        .tab-content.o-tabs__content.m-tabsContent
 
-            nav.o-tabs__nav.m-tabsNav
-                .container  
-                    .nav.nav-tabs.m-tabsNav__nav(role="tablist")
-                
-                        a.m-tabsNav__link.active(id="index-1-tab" data-toggle="tab" href="#index-1" role="tab" aria-controls="index-1" aria-selected="true") Doporučené
-                
-                        a.m-tabsNav__link(id="index-2-tab" data-toggle="tab" href="#index-2" role="tab" aria-controls="index-2" aria-selected="false") Novinky
-            
-                        a.m-tabsNav__link(id="index-3-tab" data-toggle="tab" href="#index-3" role="tab" aria-controls="index-3" aria-selected="false") Nejprodávanější
+                            .tab-pane.fade.m-tabsContent__pane.show.active(id="index-1" role="tabpanel" aria-labelledby="index-1-tab")  
+                                .m-tabsContent__collapseToggle(data-toggle="collapse" data-target="#collapseIndexTab-1" aria-expanded="false" aria-controls="#collapseIndexTab-1") Doporučené
+                                .collapse.m-tabsContent__collapse.show(id="collapseIndexTab-1" aria-labelledby="collapseIndexTab-1")
+                                    .container  
+                                        .o-sectionSale.m-productCarousel
+                                            .m-productCarousel__content
+                                                .swiper-wrapper.m-productCarousel__wrap
 
-            .tab-content.o-tabs__content.m-tabsContent
-
-                .tab-pane.fade.m-tabsContent__pane.show.active(id="index-1" role="tabpanel" aria-labelledby="index-1-tab")  
-                    .m-tabsContent__collapseToggle(data-toggle="collapse" data-target="#collapseIndexTab-1" aria-expanded="false" aria-controls="#collapseIndexTab-1") Doporučené
-                    .collapse.m-tabsContent__collapse.show(id="collapseIndexTab-1" aria-labelledby="collapseIndexTab-1")
-                        .container  
-                            .o-sectionSale.m-productCarousel
-                                .m-productCarousel__content
-                                    .swiper-wrapper.m-productCarousel__wrap
-
-                                        .swiper-slide.m-productCarousel__slide
-                                            include partials/_single-product-cell.pug
-                                        .swiper-slide.m-productCarousel__slide
-                                            include partials/_single-product-cell.pug
-                                        .swiper-slide.m-productCarousel__slide
-                                            include partials/_single-product-cell.pug
-                                        .swiper-slide.m-productCarousel__slide
-                                            include partials/_single-product-cell.pug
-                                        .swiper-slide.m-productCarousel__slide
-                                            include partials/_single-product-cell.pug
-                                    
-                                .swiper-button-prev.m-productCarousel__swiperButton.-prev
-                                .swiper-button-next.m-productCarousel__swiperButton.-next
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                
+                                            .swiper-button-prev.m-productCarousel__swiperButton.-prev
+                                            .swiper-button-next.m-productCarousel__swiperButton.-next
 
 
-                .tab-pane.fade.m-tabsContent__pane(id="index-2" role="tabpanel" aria-labelledby="index-2-tab")    
-                    .m-tabsContent__collapseToggle(data-toggle="collapse" data-target="#collapseIndexTab-2" aria-expanded="false" aria-controls="#collapseIndexTab-2") Novinky
-                    .collapse.m-tabsContent__collapse(id="collapseIndexTab-2" aria-labelledby="collapseIndexTab-2")
-                        .container  
-                            .o-sectionSale.m-productCarousel
-                                .m-productCarousel__content
-                                    .swiper-wrapper.m-productCarousel__wrap
+                            .tab-pane.fade.m-tabsContent__pane(id="index-2" role="tabpanel" aria-labelledby="index-2-tab")    
+                                .m-tabsContent__collapseToggle(data-toggle="collapse" data-target="#collapseIndexTab-2" aria-expanded="false" aria-controls="#collapseIndexTab-2") Novinky
+                                .collapse.m-tabsContent__collapse(id="collapseIndexTab-2" aria-labelledby="collapseIndexTab-2")
+                                    .container  
+                                        .o-sectionSale.m-productCarousel
+                                            .m-productCarousel__content
+                                                .swiper-wrapper.m-productCarousel__wrap
 
-                                        .swiper-slide.m-productCarousel__slide
-                                            include partials/_single-product-cell.pug
-                                        .swiper-slide.m-productCarousel__slide
-                                            include partials/_single-product-cell.pug
-                                        .swiper-slide.m-productCarousel__slide
-                                            include partials/_single-product-cell.pug
-                                        .swiper-slide.m-productCarousel__slide
-                                            include partials/_single-product-cell.pug
-                                        .swiper-slide.m-productCarousel__slide
-                                            include partials/_single-product-cell.pug
-                                    
-                                .swiper-button-prev.m-productCarousel__swiperButton.-prev
-                                .swiper-button-next.m-productCarousel__swiperButton.-next
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                
+                                            .swiper-button-prev.m-productCarousel__swiperButton.-prev
+                                            .swiper-button-next.m-productCarousel__swiperButton.-next
 
 
 
-                .tab-pane.fade.m-tabsContent__pane(id="index-3" role="tabpanel" aria-labelledby="index-3-tab")   
-                    .m-tabsContent__collapseToggle(data-toggle="collapse" data-target="#collapseIndexTab-3" aria-expanded="false" aria-controls="#collapseIndexTab-3") Nejprodávanější
-                    .collapse.m-tabsContent__collapse(id="collapseIndexTab-3" aria-labelledby="collapseIndexTab-3")
-                        .container  
-                            .o-sectionSale.m-productCarousel
-                                .m-productCarousel__content
-                                    .swiper-wrapper.m-productCarousel__wrap
+                            .tab-pane.fade.m-tabsContent__pane(id="index-3" role="tabpanel" aria-labelledby="index-3-tab")   
+                                .m-tabsContent__collapseToggle(data-toggle="collapse" data-target="#collapseIndexTab-3" aria-expanded="false" aria-controls="#collapseIndexTab-3") Nejprodávanější
+                                .collapse.m-tabsContent__collapse(id="collapseIndexTab-3" aria-labelledby="collapseIndexTab-3")
+                                    .container  
+                                        .o-sectionSale.m-productCarousel
+                                            .m-productCarousel__content
+                                                .swiper-wrapper.m-productCarousel__wrap
 
-                                        .swiper-slide.m-productCarousel__slide
-                                            include partials/_single-product-cell.pug
-                                        .swiper-slide.m-productCarousel__slide
-                                            include partials/_single-product-cell.pug
-                                        .swiper-slide.m-productCarousel__slide
-                                            include partials/_single-product-cell.pug
-                                        .swiper-slide.m-productCarousel__slide
-                                            include partials/_single-product-cell.pug
-                                        .swiper-slide.m-productCarousel__slide
-                                            include partials/_single-product-cell.pug
-                                    
-                                .swiper-button-prev.m-productCarousel__swiperButton.-prev
-                                .swiper-button-next.m-productCarousel__swiperButton.-next
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                
+                                            .swiper-button-prev.m-productCarousel__swiperButton.-prev
+                                            .swiper-button-next.m-productCarousel__swiperButton.-next
 
 
-        include partials/_news-section.pug
-        
+                    include partials/_news-section.pug
+                    
         include partials/_footer.pug
 
         include partials/_js-include.pug

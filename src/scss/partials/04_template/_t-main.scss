@@ -1,6 +1,9 @@
 main{
-    background: $bg-white;
+    background: $bg-light;
     padding:4rem 0;
+}
+.mainWrapper{
+    background: $bg-white;
 }
 
 @media screen and (max-width:768px){

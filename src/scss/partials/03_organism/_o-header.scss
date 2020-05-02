@@ -2,18 +2,6 @@
     background: $bg-white;
     position: relative;
     z-index: 4;
-    padding-top: 4px;
-
-    &::after {
-        content: "";
-        background: url(../img/border-stripes.svg);
-        height: 5px;
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-
 }
 
 @media screen and (min-width: 992px){
@@ -25,7 +13,7 @@
 }
 
 .o-headerNav{
-    background: $bg-primary;
+    background: $bg-primary-dark;
     height: 34px;
     padding: 0 3rem;
     display: flex;
@@ -35,6 +23,10 @@
     font-weight: 600;
     max-width: 1920px;
     margin: 0 auto;
+}
+.o-headerNav__container{
+    display: flex;
+    flex-direction: row;
 }
 .o-headerNav__link{
     margin-right: 30px;

@@ -1,10 +1,8 @@
 .o-sectionPoints{
-    padding: 0rem 10px 0 10px;
-    max-width: 1920px;
-    margin: 0 auto;
+    padding: 0;
 }
 .o-sectionPoints__inner{
-    background: $bg-light;
+    background: $bg-brand;
 }
 .o-sectionPoints__container{
     display: flex;
@@ -12,7 +10,6 @@
     width: 100%;
 }
 .o-sectionPoints__wrap{
-    background: $bg-light;
     padding: 2rem 2rem;
     display: flex;
     flex-direction: row;
@@ -27,24 +24,15 @@
     padding: 10px 0;
 }
 .o-sectionPoints__imgWrap{
-    background: rgba(61,153,255,0.2);
+    background: rgba($black,0.1);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 64px;
-    width: 64px;
+    height: 42px;
+    width: 42px;
     border-radius: $border-radius-primary;
-
-    &.--pink{
-        background: rgba(231,108,176,0.2);
-    }
-    &.--purple{
-        background: rgba(145,93,191,0.2);
-    }
-    &.--orange{
-        background: rgba(254,168,0,0.2);
-    }  
+ 
 }
 .o-sectionPoints__img{
     width: 34px;
@@ -58,10 +46,14 @@
 .o-sectionPoints__title, .o-sectionPoints__text{
     font-size: 16px;
     margin: 0;
-    color: $text-primary;
+    color: $text-white;    
+    font-weight: 400;
+}
+.o-sectionPoints__text{
+    font-size: 14px;
 }
 .o-sectionPoints__title{
-    font-weight: 700;
+    font-weight: 500;
 }
 
 
