@@ -14,8 +14,11 @@
     height: 48px;
     padding: 0 20px;
     width: 100%;
-    background: $bg-white;
-    border: 1px solid $border-grey;
+    background: rgba($bg-white,0.1);
+    color: $text-white;
+}
+.m-navSearch__input::placeholder{
+    color: rgba($white, 0.6);
 }
 .m-navSearch__button{
     position: absolute;

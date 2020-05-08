@@ -30,10 +30,10 @@ nav.o-navMain
 				.m-navSearch__close(id="js-navSearchTogglerClose")
 					.a-icon.-cross.m-navSearch__closeIcon
 				input.m-navSearch__input(type="text" name="searchbox" id="searchbox" placeholder="Hledejte název produktu, značku nebo typ" required)
-				button.m-navSearch__button #[span.a-icon.-search.m-navSearch__icon]
+				button.m-navSearch__button #[span.a-icon.-search.-white.m-navSearch__icon]
 			
 		.o-navMain__navSearchToggler.m-navSearchToggler(id="js-navSearchToggler")
-			.a-icon.-search.m-navSearchToggler__icon
+			.a-icon.-search.-white.m-navSearchToggler__icon
 			
 		//
 			<a class="o-navMain__user m-navUser" href="#" data-toggle="modal" data-target="#modal-login">
@@ -42,7 +42,7 @@ nav.o-navMain
 			</a>
 
 		.o-navMain__user.m-navUser(data-toggle="collapse" data-target="#collapseNavUser" aria-expanded="false" aria-controls="collapseNavUser")
-			.a-icon.-user.-blue.m-navUser__icon
+			.a-icon.-user.-white.m-navUser__icon
 			.m-navUser__info
 				span.m-navUser__text Přihlášen jako
 				span.m-navUser__title Petr Novák
@@ -54,7 +54,7 @@ nav.o-navMain
 		//
 			<a class="o-navMain__cart m-navCart" href="#">
 				<div class="m-navCart__iconWrap">
-					<div class="a-icon -cart -grey m-navCart__icon"></div>
+					<div class="a-icon -cart -white m-navCart__icon"></div>
 				</div>
 				<div class="m-navCart__info"><span class="m-navCart__title">Nákupní košík</span></div>
 			</a>
@@ -63,7 +63,7 @@ nav.o-navMain
 			a.m-navCart__desktopLink(href="#")
 			.m-navCart__toggle(data-toggle="collapse" data-target="#collapseNavCart" aria-expanded="false" aria-controls="collapseNavCart")
 				.m-navCart__iconWrap
-					.a-icon.-cart.-red.m-navCart__icon
+					.a-icon.-cart.-white.m-navCart__icon
 						.m-navCart__icoNumber 2
 				.m-navCart__info
 					span.m-navCart__text Nákupní košík

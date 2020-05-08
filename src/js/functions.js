@@ -158,6 +158,13 @@ $("#js-filterToggler, #js-filterTogglerResponsive, #js-filterTogglerResponsive2"
     $("#js-filter").toggleClass("-active");
 });
 
+$(".mainTop__menuToggle").click(function() { 
+    $("#js-navProducts").toggleClass("-active");
+});
+
+
+
+
 // =============================================================================
 // FILTER 
 // =============================================================================

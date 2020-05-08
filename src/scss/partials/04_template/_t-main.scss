@@ -1,11 +1,46 @@
 main{
     background: $bg-light;
-    padding:4rem 0;
+    padding: 2rem 0;
 }
 .mainWrapper{
     background: $bg-white;
 }
+.mainTop{
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+}
+.mainTop__menu{
+    background: $bg-white;
 
+    .o-navProducts{
+        position: absolute;
+        top: 46px;
+        display: none;
+    }
+    .o-navProducts.-active{
+        display: flex;
+    }
+}
+.mainTop__menuToggle{
+    background: $brand-primary;
+    color: $text-white;
+    width: 280px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+@media screen and (max-width:991px){
+    .mainTop {
+        position: static;
+    }
+    .mainTop__menu .o-navProducts {
+        top: 0px;
+    }
+}
 @media screen and (max-width:768px){
     main{
         background: $bg-white;

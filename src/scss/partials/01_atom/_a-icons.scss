@@ -9,7 +9,7 @@
 .a-icon.-hamburger{
     height: 2px;
     width: 18px;
-    background: $bg-primary;
+    background: $bg-white;
     display: block;
     @include center(both);
     position: relative;
@@ -22,7 +22,7 @@
         left: 0;
         height: 100%;
         width: 100%;
-        background: $bg-primary;
+        background: $bg-white;
         transform: translate(0%,-300%);
         transition: 0.3s all ease; 
     }

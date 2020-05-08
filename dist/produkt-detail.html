@@ -116,11 +116,11 @@
                 <div class="a-icon -cross m-navSearch__closeIcon"></div>
               </div>
               <input class="m-navSearch__input" type="text" name="searchbox" id="searchbox" placeholder="Hledejte název produktu, značku nebo typ" required>
-              <button class="m-navSearch__button"><span class="a-icon -search m-navSearch__icon"></span></button>
+              <button class="m-navSearch__button"><span class="a-icon -search -white m-navSearch__icon"></span></button>
             </form>
           </div>
           <div class="o-navMain__navSearchToggler m-navSearchToggler" id="js-navSearchToggler">
-            <div class="a-icon -search m-navSearchToggler__icon"></div>
+            <div class="a-icon -search -white m-navSearchToggler__icon"></div>
           </div>
           <!--
           <a class="o-navMain__user m-navUser" href="#" data-toggle="modal" data-target="#modal-login">
@@ -130,14 +130,14 @@
           
           -->
           <div class="o-navMain__user m-navUser" data-toggle="collapse" data-target="#collapseNavUser" aria-expanded="false" aria-controls="collapseNavUser">
-            <div class="a-icon -user -blue m-navUser__icon"></div>
+            <div class="a-icon -user -white m-navUser__icon"></div>
             <div class="m-navUser__info"><span class="m-navUser__text">Přihlášen jako</span><span class="m-navUser__title">Petr Novák</span></div>
             <div class="collapse m-navUser__collapse" id="collapseNavUser" aria-labelledby="collapseNavUser"><a class="m-navUser__collapseLink" href="#">Změna osobních údajů</a><a class="m-navUser__collapseLink" href="#">Historie objednávek</a><a class="m-navUser__collapseLink" href="#">Odhlásit</a></div>
           </div>
           <!--
           <a class="o-navMain__cart m-navCart" href="#">
           	<div class="m-navCart__iconWrap">
-          		<div class="a-icon -cart -grey m-navCart__icon"></div>
+          		<div class="a-icon -cart -white m-navCart__icon"></div>
           	</div>
           	<div class="m-navCart__info"><span class="m-navCart__title">Nákupní košík</span></div>
           </a>
@@ -146,7 +146,7 @@
           <div class="o-navMain__cart m-navCart -active"><a class="m-navCart__desktopLink" href="#"></a>
             <div class="m-navCart__toggle" data-toggle="collapse" data-target="#collapseNavCart" aria-expanded="false" aria-controls="collapseNavCart">
               <div class="m-navCart__iconWrap">
-                <div class="a-icon -cart -red m-navCart__icon">
+                <div class="a-icon -cart -white m-navCart__icon">
                   <div class="m-navCart__icoNumber">2</div>
                 </div>
               </div>
@@ -184,49 +184,6 @@
       </nav>
       <div class="a-darkOverlay" id="js-darkOverlay"></div>
       <div class="a-navPush"></div>
-      <nav class="o-navProducts" id="js-navProducts">
-        <div class="o-navProducts__user m-navUserMenu">
-          <div class="m-navUserMenu__heading" data-toggle="collapse" data-target="#collapseUser" aria-expanded="false" aria-controls="collapseUser"><span class="a-icon -user -white m-navUserMenu__img"></span>
-            <div class="m-navUserMenu__username">Petr Novák</div><span class="a-icon -cheveron -white m-navUserMenu__cheveron"> </span>
-          </div>
-          <div class="collapse m-navUserMenu__content" id="collapseUser"><a class="m-navUserMenu__link" href="#"><span class="a-icon -personalInfo m-navUserMenu__icon"></span> Změna osobních údajů</a><a class="m-navUserMenu__link" href="#"><span class="a-icon -calendar m-navUserMenu__icon"></span> Historie objednávek</a><a class="m-navUserMenu__link" href="#"><span class="a-icon -logOut m-navUserMenu__icon"></span> Odhlásit</a></div>
-        </div>
-        <!--
-        <div class="o-navProducts__user m-navUserMenu">
-        	<a class="m-navUserMenu__heading" data-toggle="modal" data-target="#modal-login">
-        		<span class="a-icon -user -white m-navUserMenu__img"></span>
-        		<div class="m-navUserMenu__username">Přihlášení</div>
-        	</a>
-        </div>
-        
-        
-        -->
-        <div class="accordion o-navProducts__accordion" id="accordionProducts">
-          <div class="o-navProducts__item">
-            <div class="o-navProducts__link" id="headingProducts-1" data-toggle="collapse" data-target="#collapseProducts-1" aria-expanded="false" aria-controls="collapseProducts-1">Akční nabídka</div><a class="o-navProducts__linkDesktop" href="#">Akční nabídka</a>
-            <div class="collapse o-navProducts__collapse" id="collapseProducts-1" aria-labelledby="headingProducts-1" data-parent="#accordionProducts">
-              <div class="o-navProducts__subCategoryWrap"><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a>
-              </div>
-            </div>
-          </div>
-          <div class="o-navProducts__item">
-            <div class="o-navProducts__link" id="headingProducts-2" data-toggle="collapse" data-target="#collapseProducts-2" aria-expanded="false" aria-controls="collapseProducts-2">Matrace </div><a class="o-navProducts__linkDesktop" href="#">Postele</a>
-            <div class="collapse o-navProducts__collapse" id="collapseProducts-2" aria-labelledby="headingProducts-2" data-parent="#accordionProducts">
-              <div class="o-navProducts__subCategoryWrap"><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a>
-              </div>
-            </div>
-          </div>
-          <div class="o-navProducts__item">
-            <div class="o-navProducts__link" id="headingProducts-3" data-toggle="collapse" data-target="#collapseProducts-3" aria-expanded="false" aria-controls="collapseProducts-3">Postele</div><a class="o-navProducts__linkDesktop" href="#">Postele</a>
-            <div class="collapse o-navProducts__collapse" id="collapseProducts-3" aria-labelledby="headingProducts-3" data-parent="#accordionProducts">
-              <div class="o-navProducts__subCategoryWrap"><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a>
-              </div>
-            </div>
-          </div>
-          <div class="o-navProducts__item"><a class="o-navProducts__link" href="#">Postele</a><a class="o-navProducts__linkDesktop" href="#">Postele</a></div>
-        </div>
-      </nav>
-      <div class="m-navProductsClose" id="js-navProductsClose"><span class="a-icon -cross -white"></span></div>
     </header>
     <div class="modal fade o-modal -wide" id="modal-add-to-cart" tabindex="-1" role="dialog" aria-labelledby="modal-add-to-cart-heading" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered o-modal__dialog" role="document">
@@ -299,418 +256,351 @@
         </div>
       </div>
     </div>
-    <nav class="m-breadcrumb">
-      <div class="container m-breadcrumb__container"><a class="m-breadcrumb__item" href="#">Lorem ipsum</a><a class="m-breadcrumb__item" href="#">Dolor sit amet</a><a class="m-breadcrumb__item" href="#">Lorem ipsum</a><span class="m-breadcrumb__item active">Lorem ipsum</span></div>
-    </nav>
-    <section class="o-productDetail">
+    <main>
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-7 o-productDetail__col">
-            <div class="o-productDetail__carousel m-productDetailCarousel">
-              <div class="m-productDetailCarousel__tags">
-                <div class="m-productDetailCarousel__tagSingle">
-                  <div class="a-tag -sale">Akce</div>
+        <div class="mainTop">
+          <div class="mainTop__menu">
+            <div class="mainTop__menuToggle">Všechny kategorie</div>
+            <nav class="o-navProducts" id="js-navProducts">
+              <div class="o-navProducts__user m-navUserMenu">
+                <div class="m-navUserMenu__heading" data-toggle="collapse" data-target="#collapseUser" aria-expanded="false" aria-controls="collapseUser"><span class="a-icon -user -white m-navUserMenu__img"></span>
+                  <div class="m-navUserMenu__username">Petr Novák</div><span class="a-icon -cheveron -white m-navUserMenu__cheveron"> </span>
                 </div>
-                <div class="m-productDetailCarousel__tagSingle">   
-                  <div class="a-tag -new">Novinka</div>
-                </div>
-                <div class="m-productDetailCarousel__tagSingle"> 
-                  <div class="a-tag -recommended">Doporučené</div>
-                </div>
-                <div class="m-productDetailCarousel__tagSingle"> 
-                  <div class="a-tag -top">Top</div>
-                </div>
+                <div class="collapse m-navUserMenu__content" id="collapseUser"><a class="m-navUserMenu__link" href="#"><span class="a-icon -personalInfo m-navUserMenu__icon"></span> Změna osobních údajů</a><a class="m-navUserMenu__link" href="#"><span class="a-icon -calendar m-navUserMenu__icon"></span> Historie objednávek</a><a class="m-navUserMenu__link" href="#"><span class="a-icon -logOut m-navUserMenu__icon"></span> Odhlásit</a></div>
               </div>
-              <div class="m-productDetailCarousel__gallery" itemscope itemtype="http://schema.org/ImageGallery">
-                <div class="swiper-container-horizontal m-productDetailCarousel__content">
-                  <div class="swiper-wrapper m-productDetailCarousel__wrap">
-                    <div class="swiper-slide m-productDetailCarousel__slide">
-                      <figure class="m-productDetailCarousel__figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a class="m-productDetailCarousel__link" href="img/product-thumb-large.jpg" itemprop="contentUrl" data-size="1920x1920"><img class="swiper-lazy m-productDetailCarousel__img" data-src="img/product-thumb-large.jpg" itemprop="thumbnail" alt="Image description" data-index="1">
-                          <div class="swiper-lazy-preloader m-productDetailCarousel__preloader"></div></a>
-                        <figcaption class="m-productDetailCarousel__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
-                      </figure>
-                    </div>
-                    <div class="swiper-slide m-productDetailCarousel__slide">
-                      <figure class="m-productDetailCarousel__figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a class="m-productDetailCarousel__link" href="img/product-thumb-large.jpg" itemprop="contentUrl" data-size="1920x1920"><img class="swiper-lazy m-productDetailCarousel__img" data-src="img/product-thumb-large.jpg" itemprop="thumbnail" alt="Image description" data-index="1">
-                          <div class="swiper-lazy-preloader m-productDetailCarousel__preloader"></div></a>
-                        <figcaption class="m-productDetailCarousel__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
-                      </figure>
-                    </div>
-                    <div class="swiper-slide m-productDetailCarousel__slide">
-                      <figure class="m-productDetailCarousel__figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a class="m-productDetailCarousel__link" href="img/product-thumb-large.jpg" itemprop="contentUrl" data-size="1920x1920"><img class="swiper-lazy m-productDetailCarousel__img" data-src="img/product-thumb-large.jpg" itemprop="thumbnail" alt="Image description" data-index="1">
-                          <div class="swiper-lazy-preloader m-productDetailCarousel__preloader"></div></a>
-                        <figcaption class="m-productDetailCarousel__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
-                      </figure>
-                    </div>
-                    <div class="swiper-slide m-productDetailCarousel__slide">
-                      <figure class="m-productDetailCarousel__figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a class="m-productDetailCarousel__link" href="img/product-thumb-large.jpg" itemprop="contentUrl" data-size="1920x1920"><img class="swiper-lazy m-productDetailCarousel__img" data-src="img/product-thumb-large.jpg" itemprop="thumbnail" alt="Image description" data-index="1">
-                          <div class="swiper-lazy-preloader m-productDetailCarousel__preloader"></div></a>
-                        <figcaption class="m-productDetailCarousel__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
-                      </figure>
-                    </div>
-                    <div class="swiper-slide m-productDetailCarousel__slide">
-                      <figure class="m-productDetailCarousel__figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a class="m-productDetailCarousel__link" href="img/product-thumb-large.jpg" itemprop="contentUrl" data-size="1920x1920"><img class="swiper-lazy m-productDetailCarousel__img" data-src="img/product-thumb-large.jpg" itemprop="thumbnail" alt="Image description" data-index="1">
-                          <div class="swiper-lazy-preloader m-productDetailCarousel__preloader"></div></a>
-                        <figcaption class="m-productDetailCarousel__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
-                      </figure>
-                    </div>
-                    <div class="swiper-slide m-productDetailCarousel__slide">
-                      <figure class="m-productDetailCarousel__figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a class="m-productDetailCarousel__link" href="img/product-thumb-large.jpg" itemprop="contentUrl" data-size="1920x1920"><img class="swiper-lazy m-productDetailCarousel__img" data-src="img/product-thumb-large.jpg" itemprop="thumbnail" alt="Image description" data-index="1">
-                          <div class="swiper-lazy-preloader m-productDetailCarousel__preloader"></div></a>
-                        <figcaption class="m-productDetailCarousel__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
-                      </figure>
-                    </div>
-                    <div class="swiper-slide m-productDetailCarousel__slide">
-                      <figure class="m-productDetailCarousel__figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a class="m-productDetailCarousel__link" href="img/product-thumb-large.jpg" itemprop="contentUrl" data-size="1920x1920"><img class="swiper-lazy m-productDetailCarousel__img" data-src="img/product-thumb-large.jpg" itemprop="thumbnail" alt="Image description" data-index="1">
-                          <div class="swiper-lazy-preloader m-productDetailCarousel__preloader"></div></a>
-                        <figcaption class="m-productDetailCarousel__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
-                      </figure>
-                    </div>
-                    <div class="swiper-slide m-productDetailCarousel__slide">
-                      <figure class="m-productDetailCarousel__figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a class="m-productDetailCarousel__link" href="img/product-thumb-large.jpg" itemprop="contentUrl" data-size="1920x1920"><img class="swiper-lazy m-productDetailCarousel__img" data-src="img/product-thumb-large.jpg" itemprop="thumbnail" alt="Image description" data-index="1">
-                          <div class="swiper-lazy-preloader m-productDetailCarousel__preloader"></div></a>
-                        <figcaption class="m-productDetailCarousel__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="swiper-pagination swiper-pagination-white m-productDetailCarousel__swiperNav"></div>
-                  <div class="swiper-button-prev m-productDetailCarousel__swiperButton -prev"></div>
-                  <div class="swiper-button-next m-productDetailCarousel__swiperButton -next"></div>
-                </div>
+              <!--
+              <div class="o-navProducts__user m-navUserMenu">
+              	<a class="m-navUserMenu__heading" data-toggle="modal" data-target="#modal-login">
+              		<span class="a-icon -user -white m-navUserMenu__img"></span>
+              		<div class="m-navUserMenu__username">Přihlášení</div>
+              	</a>
               </div>
-            </div>
-            <div class="o-productDetail__thumbs m-productDetailThumbs">
-              <div class="swiper-container-horizontal m-productDetailThumbs__content">                                 
-                <div class="swiper-wrapper m-productDetailThumbs__wrap">
-                  <div class="swiper-slide m-productDetailThumbs__slide">
-                    <div class="m-productDetailThumbs__paddingWrap">
-                      <figure class="m-productDetailThumbs__figure"><img class="swiper-lazy m-productDetailThumbs__img" data-src="img/product-thumb-small.jpg" alt="#">
-                        <div class="swiper-lazy-preloader m-productDetailThumbs__preloader"></div>
-                      </figure>
-                      <figcaption class="m-productDetailThumbs__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
-                    </div>
-                  </div>
-                  <div class="swiper-slide m-productDetailThumbs__slide">
-                    <div class="m-productDetailThumbs__paddingWrap">
-                      <figure class="m-productDetailThumbs__figure"><img class="swiper-lazy m-productDetailThumbs__img" data-src="img/product-thumb-small.jpg" alt="#">
-                        <div class="swiper-lazy-preloader m-productDetailThumbs__preloader"></div>
-                      </figure>
-                      <figcaption class="m-productDetailThumbs__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
-                    </div>
-                  </div>
-                  <div class="swiper-slide m-productDetailThumbs__slide">
-                    <div class="m-productDetailThumbs__paddingWrap">
-                      <figure class="m-productDetailThumbs__figure"><img class="swiper-lazy m-productDetailThumbs__img" data-src="img/product-thumb-small.jpg" alt="#">
-                        <div class="swiper-lazy-preloader m-productDetailThumbs__preloader"></div>
-                      </figure>
-                      <figcaption class="m-productDetailThumbs__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
-                    </div>
-                  </div>
-                  <div class="swiper-slide m-productDetailThumbs__slide">
-                    <div class="m-productDetailThumbs__paddingWrap">
-                      <figure class="m-productDetailThumbs__figure"><img class="swiper-lazy m-productDetailThumbs__img" data-src="img/product-thumb-small.jpg" alt="#">
-                        <div class="swiper-lazy-preloader m-productDetailThumbs__preloader"></div>
-                      </figure>
-                      <figcaption class="m-productDetailThumbs__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
-                    </div>
-                  </div>
-                  <div class="swiper-slide m-productDetailThumbs__slide">
-                    <div class="m-productDetailThumbs__paddingWrap">
-                      <figure class="m-productDetailThumbs__figure"><img class="swiper-lazy m-productDetailThumbs__img" data-src="img/product-thumb-small.jpg" alt="#">
-                        <div class="swiper-lazy-preloader m-productDetailThumbs__preloader"></div>
-                      </figure>
-                      <figcaption class="m-productDetailThumbs__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
-                    </div>
-                  </div>
-                  <div class="swiper-slide m-productDetailThumbs__slide">
-                    <div class="m-productDetailThumbs__paddingWrap">
-                      <figure class="m-productDetailThumbs__figure"><img class="swiper-lazy m-productDetailThumbs__img" data-src="img/product-thumb-small.jpg" alt="#">
-                        <div class="swiper-lazy-preloader m-productDetailThumbs__preloader"></div>
-                      </figure>
-                      <figcaption class="m-productDetailThumbs__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
-                    </div>
-                  </div>
-                  <div class="swiper-slide m-productDetailThumbs__slide">
-                    <div class="m-productDetailThumbs__paddingWrap">
-                      <figure class="m-productDetailThumbs__figure"><img class="swiper-lazy m-productDetailThumbs__img" data-src="img/product-thumb-small.jpg" alt="#">
-                        <div class="swiper-lazy-preloader m-productDetailThumbs__preloader"></div>
-                      </figure>
-                      <figcaption class="m-productDetailThumbs__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
-                    </div>
-                  </div>
-                  <div class="swiper-slide m-productDetailThumbs__slide">
-                    <div class="m-productDetailThumbs__paddingWrap">
-                      <figure class="m-productDetailThumbs__figure"><img class="swiper-lazy m-productDetailThumbs__img" data-src="img/product-thumb-small.jpg" alt="#">
-                        <div class="swiper-lazy-preloader m-productDetailThumbs__preloader"></div>
-                      </figure>
-                      <figcaption class="m-productDetailThumbs__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
+              
+              
+              -->
+              <div class="accordion o-navProducts__accordion" id="accordionProducts">
+                <div class="o-navProducts__item">
+                  <div class="o-navProducts__link" id="headingProducts-1" data-toggle="collapse" data-target="#collapseProducts-1" aria-expanded="false" aria-controls="collapseProducts-1">Akční nabídka</div><a class="o-navProducts__linkDesktop" href="#">Akční nabídka</a>
+                  <div class="collapse o-navProducts__collapse" id="collapseProducts-1" aria-labelledby="headingProducts-1" data-parent="#accordionProducts">
+                    <div class="o-navProducts__subCategoryWrap"><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a>
                     </div>
                   </div>
                 </div>
+                <div class="o-navProducts__item">
+                  <div class="o-navProducts__link" id="headingProducts-2" data-toggle="collapse" data-target="#collapseProducts-2" aria-expanded="false" aria-controls="collapseProducts-2">Matrace </div><a class="o-navProducts__linkDesktop" href="#">Postele</a>
+                  <div class="collapse o-navProducts__collapse" id="collapseProducts-2" aria-labelledby="headingProducts-2" data-parent="#accordionProducts">
+                    <div class="o-navProducts__subCategoryWrap"><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-navProducts__item">
+                  <div class="o-navProducts__link" id="headingProducts-3" data-toggle="collapse" data-target="#collapseProducts-3" aria-expanded="false" aria-controls="collapseProducts-3">Postele</div><a class="o-navProducts__linkDesktop" href="#">Postele</a>
+                  <div class="collapse o-navProducts__collapse" id="collapseProducts-3" aria-labelledby="headingProducts-3" data-parent="#accordionProducts">
+                    <div class="o-navProducts__subCategoryWrap"><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><img class="o-navProducts__subCategoryImg" src="img/product-thumb-small.jpg"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-navProducts__item"><a class="o-navProducts__link" href="#">Postele</a><a class="o-navProducts__linkDesktop" href="#">Postele</a></div>
               </div>
-            </div>
-            <div class="m-productDetailMain__info"><span class="m-productDetailMain__id">Katalogové číslo: Angeli160</span><span class="m-productDetailMain__id">Záruka: 24 měsíců</span></div>
+            </nav>
+            <div class="m-navProductsClose" id="js-navProductsClose"><span class="a-icon -cross -white"></span></div>
           </div>
-          <div class="col-12 col-lg-5 o-productDetail__col">
-            <div class="o-productDetail__main m-productDetailMain">
+          <nav class="m-breadcrumb">
+            <div class="container m-breadcrumb__container"><a class="m-breadcrumb__item" href="#">Lorem ipsum</a><a class="m-breadcrumb__item" href="#">Dolor sit amet</a><a class="m-breadcrumb__item" href="#">Lorem ipsum</a><span class="m-breadcrumb__item active">Lorem ipsum</span></div>
+          </nav>
+        </div>
+        <div class="mainWrapper">
+          <section class="o-productDetail">
+            <div class="container">
               <h1 class="m-productDetailMain__title">Stůl Standard 300 skládací lorem ipsum dolor sit amet</h1>
-              <div class="m-productDetailMain__description">
-                <p class="m-productDetailMain__descriptionTitle">Popis produktu</p>
-                <p class="m-productDetailMain__descriptionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. <a href="#anchor-product-detail-description">Celý popis produktu</a></p>
-              </div>
-              <form class="m-productDetailMain__form" method="post" name="product_detail_form" id="product_detail_form">
-                <div class="dropdown m-selectBox m-productDetailMain__sizes">
-                  <input class="m-selectBox__honeypot" type="radio" name="productSize" id="productSizeId" required>
-                  <div class="dropdown-toggle m-selectBox__dropdown" id="productSizeDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                    <div class="m-selectBox__dropdownText">Provedení</div><span class="a-icon -cheveron m-selectBox__icon"></span>
-                  </div>
-                  <div class="dropdown-menu m-selectBox__dropdownMenu" aria-labelledby="productSizeDrop">
-                    <label class="m-selectBox__label">
-                      <input class="m-selectBox__input" type="radio" name="productSize" id="productSizeId" required checked>
-                      <div class="m-selectBox__content"><img class="m-selectBox__img" src="img/product-thumb-small.jpg">
-                        <div class="m-selectBox__name">medium</div>
-                        <div class="m-selectBox__price"> 
-                          <div class="m-selectBox__priceOld">5 000 Kč</div>
-                          <div class="m-selectBox__priceNew">2 000 Kč</div>
-                        </div>
-                        <div class="m-selectBox__stock">Skladem</div>
+              <div class="row">
+                <div class="col-12 col-lg-6 o-productDetail__col">
+                  <div class="o-productDetail__carousel m-productDetailCarousel">
+                    <div class="m-productDetailCarousel__tags">
+                      <div class="m-productDetailCarousel__tagSingle">
+                        <div class="a-tag -sale">Akce</div>
                       </div>
-                    </label>
-                    <label class="m-selectBox__label">
-                      <input class="m-selectBox__input" type="radio" name="productSize" id="productSizeId" required>
-                      <div class="m-selectBox__content"><img class="m-selectBox__img" src="img/product-thumb-small.jpg">
-                        <div class="m-selectBox__name">largo</div>
-                        <div class="m-selectBox__price"> 
-                          <div class="m-selectBox__priceOld">9 000 Kč</div>
-                          <div class="m-selectBox__priceNew">5 000 Kč</div>
-                        </div>
-                        <div class="m-selectBox__stock">21 dní</div>
+                      <div class="m-productDetailCarousel__tagSingle">   
+                        <div class="a-tag -new">Novinka</div>
                       </div>
-                    </label>
-                    <label class="m-selectBox__label">
-                      <input class="m-selectBox__input" type="radio" name="productSize" id="productSizeId" required>
-                      <div class="m-selectBox__content"><img class="m-selectBox__img" src="img/product-thumb-small.jpg">
-                        <div class="m-selectBox__name">largo</div>
-                        <div class="m-selectBox__price"> 
-                          <div class="m-selectBox__priceOld">9 000 Kč</div>
-                          <div class="m-selectBox__priceNew">5 000 Kč</div>
-                        </div>
-                        <div class="m-selectBox__stock">21 dní</div>
+                      <div class="m-productDetailCarousel__tagSingle"> 
+                        <div class="a-tag -recommended">Doporučené</div>
                       </div>
-                    </label>
-                    <label class="m-selectBox__label">
-                      <input class="m-selectBox__input" type="radio" name="productSize" id="productSizeId" required>
-                      <div class="m-selectBox__content"><img class="m-selectBox__img" src="img/product-thumb-small.jpg">
-                        <div class="m-selectBox__name">largo</div>
-                        <div class="m-selectBox__price"> 
-                          <div class="m-selectBox__priceOld">9 000 Kč</div>
-                          <div class="m-selectBox__priceNew">5 000 Kč</div>
-                        </div>
-                        <div class="m-selectBox__stock">21 dní</div>
+                      <div class="m-productDetailCarousel__tagSingle"> 
+                        <div class="a-tag -top">Top</div>
                       </div>
-                    </label>
-                    <label class="m-selectBox__label">
-                      <input class="m-selectBox__input" type="radio" name="productSize" id="productSizeId" required>
-                      <div class="m-selectBox__content"><img class="m-selectBox__img" src="img/product-thumb-small.jpg">
-                        <div class="m-selectBox__name">largo</div>
-                        <div class="m-selectBox__price"> 
-                          <div class="m-selectBox__priceOld">9 000 Kč</div>
-                          <div class="m-selectBox__priceNew">5 000 Kč</div>
+                    </div>
+                    <div class="m-productDetailCarousel__gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                      <div class="swiper-container-horizontal m-productDetailCarousel__content">
+                        <div class="swiper-wrapper m-productDetailCarousel__wrap">
+                          <div class="swiper-slide m-productDetailCarousel__slide">
+                            <figure class="m-productDetailCarousel__figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a class="m-productDetailCarousel__link" href="img/product-thumb-large.jpg" itemprop="contentUrl" data-size="1920x1920"><img class="swiper-lazy m-productDetailCarousel__img" data-src="img/product-thumb-large.jpg" itemprop="thumbnail" alt="Image description" data-index="1">
+                                <div class="swiper-lazy-preloader m-productDetailCarousel__preloader"></div></a>
+                              <figcaption class="m-productDetailCarousel__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
+                            </figure>
+                          </div>
+                          <div class="swiper-slide m-productDetailCarousel__slide">
+                            <figure class="m-productDetailCarousel__figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a class="m-productDetailCarousel__link" href="img/product-thumb-large.jpg" itemprop="contentUrl" data-size="1920x1920"><img class="swiper-lazy m-productDetailCarousel__img" data-src="img/product-thumb-large.jpg" itemprop="thumbnail" alt="Image description" data-index="1">
+                                <div class="swiper-lazy-preloader m-productDetailCarousel__preloader"></div></a>
+                              <figcaption class="m-productDetailCarousel__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
+                            </figure>
+                          </div>
+                          <div class="swiper-slide m-productDetailCarousel__slide">
+                            <figure class="m-productDetailCarousel__figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a class="m-productDetailCarousel__link" href="img/product-thumb-large.jpg" itemprop="contentUrl" data-size="1920x1920"><img class="swiper-lazy m-productDetailCarousel__img" data-src="img/product-thumb-large.jpg" itemprop="thumbnail" alt="Image description" data-index="1">
+                                <div class="swiper-lazy-preloader m-productDetailCarousel__preloader"></div></a>
+                              <figcaption class="m-productDetailCarousel__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
+                            </figure>
+                          </div>
+                          <div class="swiper-slide m-productDetailCarousel__slide">
+                            <figure class="m-productDetailCarousel__figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a class="m-productDetailCarousel__link" href="img/product-thumb-large.jpg" itemprop="contentUrl" data-size="1920x1920"><img class="swiper-lazy m-productDetailCarousel__img" data-src="img/product-thumb-large.jpg" itemprop="thumbnail" alt="Image description" data-index="1">
+                                <div class="swiper-lazy-preloader m-productDetailCarousel__preloader"></div></a>
+                              <figcaption class="m-productDetailCarousel__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
+                            </figure>
+                          </div>
+                          <div class="swiper-slide m-productDetailCarousel__slide">
+                            <figure class="m-productDetailCarousel__figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a class="m-productDetailCarousel__link" href="img/product-thumb-large.jpg" itemprop="contentUrl" data-size="1920x1920"><img class="swiper-lazy m-productDetailCarousel__img" data-src="img/product-thumb-large.jpg" itemprop="thumbnail" alt="Image description" data-index="1">
+                                <div class="swiper-lazy-preloader m-productDetailCarousel__preloader"></div></a>
+                              <figcaption class="m-productDetailCarousel__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
+                            </figure>
+                          </div>
+                          <div class="swiper-slide m-productDetailCarousel__slide">
+                            <figure class="m-productDetailCarousel__figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a class="m-productDetailCarousel__link" href="img/product-thumb-large.jpg" itemprop="contentUrl" data-size="1920x1920"><img class="swiper-lazy m-productDetailCarousel__img" data-src="img/product-thumb-large.jpg" itemprop="thumbnail" alt="Image description" data-index="1">
+                                <div class="swiper-lazy-preloader m-productDetailCarousel__preloader"></div></a>
+                              <figcaption class="m-productDetailCarousel__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
+                            </figure>
+                          </div>
+                          <div class="swiper-slide m-productDetailCarousel__slide">
+                            <figure class="m-productDetailCarousel__figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a class="m-productDetailCarousel__link" href="img/product-thumb-large.jpg" itemprop="contentUrl" data-size="1920x1920"><img class="swiper-lazy m-productDetailCarousel__img" data-src="img/product-thumb-large.jpg" itemprop="thumbnail" alt="Image description" data-index="1">
+                                <div class="swiper-lazy-preloader m-productDetailCarousel__preloader"></div></a>
+                              <figcaption class="m-productDetailCarousel__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
+                            </figure>
+                          </div>
+                          <div class="swiper-slide m-productDetailCarousel__slide">
+                            <figure class="m-productDetailCarousel__figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a class="m-productDetailCarousel__link" href="img/product-thumb-large.jpg" itemprop="contentUrl" data-size="1920x1920"><img class="swiper-lazy m-productDetailCarousel__img" data-src="img/product-thumb-large.jpg" itemprop="thumbnail" alt="Image description" data-index="1">
+                                <div class="swiper-lazy-preloader m-productDetailCarousel__preloader"></div></a>
+                              <figcaption class="m-productDetailCarousel__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
+                            </figure>
+                          </div>
                         </div>
-                        <div class="m-selectBox__stock">21 dní</div>
+                        <div class="swiper-pagination swiper-pagination-white m-productDetailCarousel__swiperNav"></div>
+                        <div class="swiper-button-prev m-productDetailCarousel__swiperButton -prev"></div>
+                        <div class="swiper-button-next m-productDetailCarousel__swiperButton -next"></div>
                       </div>
-                    </label>
-                    <label class="m-selectBox__label">
-                      <input class="m-selectBox__input" type="radio" name="productSize" id="productSizeId" required>
-                      <div class="m-selectBox__content"><img class="m-selectBox__img" src="img/product-thumb-small.jpg">
-                        <div class="m-selectBox__name">largo</div>
-                        <div class="m-selectBox__price"> 
-                          <div class="m-selectBox__priceOld">9 000 Kč</div>
-                          <div class="m-selectBox__priceNew">5 000 Kč</div>
-                        </div>
-                        <div class="m-selectBox__stock">21 dní</div>
-                      </div>
-                    </label>
-                    <label class="m-selectBox__label">
-                      <input class="m-selectBox__input" type="radio" name="productSize" id="productSizeId" required>
-                      <div class="m-selectBox__content"><img class="m-selectBox__img" src="img/product-thumb-small.jpg">
-                        <div class="m-selectBox__name">largo</div>
-                        <div class="m-selectBox__price"> 
-                          <div class="m-selectBox__priceOld">9 000 Kč</div>
-                          <div class="m-selectBox__priceNew">5 000 Kč</div>
-                        </div>
-                        <div class="m-selectBox__stock">21 dní</div>
-                      </div>
-                    </label>
-                    <label class="m-selectBox__label">
-                      <input class="m-selectBox__input" type="radio" name="productSize" id="productSizeId" required>
-                      <div class="m-selectBox__content"><img class="m-selectBox__img" src="img/product-thumb-small.jpg">
-                        <div class="m-selectBox__name">largo</div>
-                        <div class="m-selectBox__price"> 
-                          <div class="m-selectBox__priceOld">9 000 Kč</div>
-                          <div class="m-selectBox__priceNew">5 000 Kč</div>
-                        </div>
-                        <div class="m-selectBox__stock">21 dní</div>
-                      </div>
-                    </label>
-                    <label class="m-selectBox__label">
-                      <input class="m-selectBox__input" type="radio" name="productSize" id="productSizeId" required>
-                      <div class="m-selectBox__content"><img class="m-selectBox__img" src="img/product-thumb-small.jpg">
-                        <div class="m-selectBox__name">largo</div>
-                        <div class="m-selectBox__price"> 
-                          <div class="m-selectBox__priceOld">9 000 Kč</div>
-                          <div class="m-selectBox__priceNew">5 000 Kč</div>
-                        </div>
-                        <div class="m-selectBox__stock">21 dní</div>
-                      </div>
-                    </label>
-                  </div>
-                </div>
-                <div class="m-productDetailMain__misc">
-                  <div class="m-productDetailMain__stock"> <span class="a-icon -box -green m-productDetailMain__stockIcon"></span><span class="m-productDetailMain__stockText">Dostupné skladem</span></div>
-                  <div class="m-productDetailMain__tags"><span class="m-productDetailMain__tagSingle">Výrobce: Visby</span></div>
-                </div>
-                <div class="m-productDetailMain__priceWrap"><span class="m-productDetailMain__priceOld">22 999 Kč</span>
-                  <h2 class="m-productDetailMain__priceMain">18 546 Kč</h2><span class="m-productDetailMain__priceDPH">16 800 Kč bez DPH</span>
-                </div>
-                <div class="m-productDetailMain__cta">
-                  <div class="m-productDetailMain__qty">
-                    <div class="m-numberStepper">
-                      <input class="m-numberStepper__input" type="number" min="1" max="99" value="1" name="cart-item-single-qty">
-                      <div class="m-numberStepper__btnUp"><span class="m-numberStepper__iconUp"></span></div>
-                      <div class="m-numberStepper__btnDown"><span class="m-numberStepper__iconDown"></span></div>
                     </div>
                   </div>
-                  <button class="btn m-productDetailMain__button" type="submit" name="buy-button"><span class="a-icon -cart -white m-productDetailMain__icon"></span> Do košíku</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="o-productDetailVariants">
-      <div class="container">
-        <h2 class="o-productDetailVariants__title">Další varianty produktu</h2>
-        <div class="o-productDetailVariants__heading">
-          <div class="o-productDetailVariants__headinsSingle">Název</div>
-          <div class="o-productDetailVariants__headinsSingle">Dostupnost</div>
-          <div class="o-productDetailVariants__headinsSingle">Cena</div>
-          <div class="o-productDetailVariants__headinsSingle"></div>
-        </div>
-        <div class="o-productDetailVariants__single">
-          <div class="o-productDetailVariants__imgWrap"><img class="o-productDetailVariants__img" src="img/product-thumb-small.jpg" alt="#"></div>
-          <div class="o-productDetailVariants__text">Laťkový rošt s textilií 180/200 cm</div>
-          <div class="o-productDetailVariants__text -stock">Skladem</div>
-          <div class="o-productDetailVariants__text -price">426 Kč</div><a class="o-productDetailVariants__text -link" href="#">Detail produktu <span class="a-icon -cheveron o-productDetailVariants__icon"></span></a>
-        </div>
-        <div class="o-productDetailVariants__single">
-          <div class="o-productDetailVariants__imgWrap"><img class="o-productDetailVariants__img" src="img/product-thumb-small.jpg" alt="#"></div>
-          <div class="o-productDetailVariants__text">Laťkový rošt s textilií 180/200 cm</div>
-          <div class="o-productDetailVariants__text -stock">Skladem</div>
-          <div class="o-productDetailVariants__text -price">426 Kč</div><a class="o-productDetailVariants__text -link" href="#">Detail produktu <span class="a-icon -cheveron o-productDetailVariants__icon"></span></a>
-        </div>
-        <div class="o-productDetailVariants__single">
-          <div class="o-productDetailVariants__imgWrap"><img class="o-productDetailVariants__img" src="img/product-thumb-small.jpg" alt="#"></div>
-          <div class="o-productDetailVariants__text">Laťkový rošt s textilií 180/200 cm</div>
-          <div class="o-productDetailVariants__text -stock">Skladem</div>
-          <div class="o-productDetailVariants__text -price">426 Kč</div><a class="o-productDetailVariants__text -link" href="#">Detail produktu <span class="a-icon -cheveron o-productDetailVariants__icon"></span></a>
-        </div>
-        <div class="o-productDetailVariants__single">
-          <div class="o-productDetailVariants__imgWrap"><img class="o-productDetailVariants__img" src="img/product-thumb-small.jpg" alt="#"></div>
-          <div class="o-productDetailVariants__text">Laťkový rošt s textilií 180/200 cm</div>
-          <div class="o-productDetailVariants__text -stock">Skladem</div>
-          <div class="o-productDetailVariants__text -price">426 Kč</div><a class="o-productDetailVariants__text -link" href="#">Detail produktu <span class="a-icon -cheveron o-productDetailVariants__icon"></span></a>
-        </div>
-        <div class="o-productDetailVariants__single">
-          <div class="o-productDetailVariants__imgWrap"><img class="o-productDetailVariants__img" src="img/product-thumb-small.jpg" alt="#"></div>
-          <div class="o-productDetailVariants__text">Laťkový rošt s textilií 180/200 cm</div>
-          <div class="o-productDetailVariants__text -stock">Skladem</div>
-          <div class="o-productDetailVariants__text -price">426 Kč</div><a class="o-productDetailVariants__text -link" href="#">Detail produktu <span class="a-icon -cheveron o-productDetailVariants__icon"></span></a>
-        </div>
-        <div class="o-productDetailVariants__single">
-          <div class="o-productDetailVariants__imgWrap"><img class="o-productDetailVariants__img" src="img/product-thumb-small.jpg" alt="#"></div>
-          <div class="o-productDetailVariants__text">Laťkový rošt s textilií 180/200 cm</div>
-          <div class="o-productDetailVariants__text -stock">Skladem</div>
-          <div class="o-productDetailVariants__text -price">426 Kč</div><a class="o-productDetailVariants__text -link" href="#">Detail produktu <span class="a-icon -cheveron o-productDetailVariants__icon"></span></a>
-        </div>
-        <div class="o-productDetailVariants__single">
-          <div class="o-productDetailVariants__imgWrap"><img class="o-productDetailVariants__img" src="img/product-thumb-small.jpg" alt="#"></div>
-          <div class="o-productDetailVariants__text">Laťkový rošt s textilií 180/200 cm</div>
-          <div class="o-productDetailVariants__text -stock">Skladem</div>
-          <div class="o-productDetailVariants__text -price">426 Kč</div><a class="o-productDetailVariants__text -link" href="#">Detail produktu <span class="a-icon -cheveron o-productDetailVariants__icon"></span></a>
-        </div>
-        <div class="o-productDetailVariants__single">
-          <div class="o-productDetailVariants__imgWrap"><img class="o-productDetailVariants__img" src="img/product-thumb-small.jpg" alt="#"></div>
-          <div class="o-productDetailVariants__text">Laťkový rošt s textilií 180/200 cm</div>
-          <div class="o-productDetailVariants__text -stock">Skladem</div>
-          <div class="o-productDetailVariants__text -price">426 Kč</div><a class="o-productDetailVariants__text -link" href="#">Detail produktu <span class="a-icon -cheveron o-productDetailVariants__icon"></span></a>
-        </div>
-      </div>
-    </section>
-    <section class="o-sectionProducts o-tabs">
-      <nav class="o-tabs__nav m-tabsNav">
-        <div class="container"> 
-          <div class="nav nav-tabs m-tabsNav__nav" role="tablist"><a class="m-tabsNav__link active" id="index-1-tab" data-toggle="tab" href="#index-1" role="tab" aria-controls="index-1" aria-selected="true">Popis produktu</a><a class="m-tabsNav__link" id="index-2-tab" data-toggle="tab" href="#index-2" role="tab" aria-controls="index-2" aria-selected="false">Příslušenství</a></div>
-        </div>
-      </nav>
-      <div class="tab-content o-tabs__content m-tabsContent">
-        <div class="tab-pane fade m-tabsContent__pane show active" id="index-1" role="tabpanel" aria-labelledby="index-1-tab"> 
-          <div class="m-tabsContent__collapseToggle" data-toggle="collapse" data-target="#collapseIndexTab-1" aria-expanded="false" aria-controls="#collapseIndexTab-1">Popis produktu</div>
-          <div class="collapse m-tabsContent__collapse show" id="collapseIndexTab-1" aria-labelledby="collapseIndexTab-1">
-            <section class="o-productDescription" id="anchor-product-detail-description">
-              <div class="container"> 
-                <div class="row">
-                  <div class="col-12 col-md-8">
-                    <p><strong>Popis</strong></p>
-                    <p>Hydrance Optimale Riche je výživný hydratační krém, který je určen pro suchou až velmi suchou dehydratovanou citlivou pleť. Přináší okamžitou a intenzivní hydrataci pleti, která má dlouhotrvající účinek. Krém má vláčnou texturu, která dodává pleti pocit pohodlí. Díky unikátnímu složení se snižuje možnost vzniku alergií. Krém je vhodný jako podklad pod make-up.</p>
-                    <p><strong>Dávkování a způsob užití</strong></p>
-                    <p>Aplikujte krém ráno, anebo večer na dokonale čistou a osušenou pleť.</p>
-                    <p><strong>Složení</strong></p>
-                    <p>Přípravek obsahuje termální vodu Avene, bambucké máslo, meiboserin, lipomucin.</p>
+                  <div class="o-productDetail__thumbs m-productDetailThumbs">
+                    <div class="swiper-container-horizontal m-productDetailThumbs__content">                                 
+                      <div class="swiper-wrapper m-productDetailThumbs__wrap">
+                        <div class="swiper-slide m-productDetailThumbs__slide">
+                          <div class="m-productDetailThumbs__paddingWrap">
+                            <figure class="m-productDetailThumbs__figure"><img class="swiper-lazy m-productDetailThumbs__img" data-src="img/product-thumb-small.jpg" alt="#">
+                              <div class="swiper-lazy-preloader m-productDetailThumbs__preloader"></div>
+                            </figure>
+                            <figcaption class="m-productDetailThumbs__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
+                          </div>
+                        </div>
+                        <div class="swiper-slide m-productDetailThumbs__slide">
+                          <div class="m-productDetailThumbs__paddingWrap">
+                            <figure class="m-productDetailThumbs__figure"><img class="swiper-lazy m-productDetailThumbs__img" data-src="img/product-thumb-small.jpg" alt="#">
+                              <div class="swiper-lazy-preloader m-productDetailThumbs__preloader"></div>
+                            </figure>
+                            <figcaption class="m-productDetailThumbs__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
+                          </div>
+                        </div>
+                        <div class="swiper-slide m-productDetailThumbs__slide">
+                          <div class="m-productDetailThumbs__paddingWrap">
+                            <figure class="m-productDetailThumbs__figure"><img class="swiper-lazy m-productDetailThumbs__img" data-src="img/product-thumb-small.jpg" alt="#">
+                              <div class="swiper-lazy-preloader m-productDetailThumbs__preloader"></div>
+                            </figure>
+                            <figcaption class="m-productDetailThumbs__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
+                          </div>
+                        </div>
+                        <div class="swiper-slide m-productDetailThumbs__slide">
+                          <div class="m-productDetailThumbs__paddingWrap">
+                            <figure class="m-productDetailThumbs__figure"><img class="swiper-lazy m-productDetailThumbs__img" data-src="img/product-thumb-small.jpg" alt="#">
+                              <div class="swiper-lazy-preloader m-productDetailThumbs__preloader"></div>
+                            </figure>
+                            <figcaption class="m-productDetailThumbs__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
+                          </div>
+                        </div>
+                        <div class="swiper-slide m-productDetailThumbs__slide">
+                          <div class="m-productDetailThumbs__paddingWrap">
+                            <figure class="m-productDetailThumbs__figure"><img class="swiper-lazy m-productDetailThumbs__img" data-src="img/product-thumb-small.jpg" alt="#">
+                              <div class="swiper-lazy-preloader m-productDetailThumbs__preloader"></div>
+                            </figure>
+                            <figcaption class="m-productDetailThumbs__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
+                          </div>
+                        </div>
+                        <div class="swiper-slide m-productDetailThumbs__slide">
+                          <div class="m-productDetailThumbs__paddingWrap">
+                            <figure class="m-productDetailThumbs__figure"><img class="swiper-lazy m-productDetailThumbs__img" data-src="img/product-thumb-small.jpg" alt="#">
+                              <div class="swiper-lazy-preloader m-productDetailThumbs__preloader"></div>
+                            </figure>
+                            <figcaption class="m-productDetailThumbs__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
+                          </div>
+                        </div>
+                        <div class="swiper-slide m-productDetailThumbs__slide">
+                          <div class="m-productDetailThumbs__paddingWrap">
+                            <figure class="m-productDetailThumbs__figure"><img class="swiper-lazy m-productDetailThumbs__img" data-src="img/product-thumb-small.jpg" alt="#">
+                              <div class="swiper-lazy-preloader m-productDetailThumbs__preloader"></div>
+                            </figure>
+                            <figcaption class="m-productDetailThumbs__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
+                          </div>
+                        </div>
+                        <div class="swiper-slide m-productDetailThumbs__slide">
+                          <div class="m-productDetailThumbs__paddingWrap">
+                            <figure class="m-productDetailThumbs__figure"><img class="swiper-lazy m-productDetailThumbs__img" data-src="img/product-thumb-small.jpg" alt="#">
+                              <div class="swiper-lazy-preloader m-productDetailThumbs__preloader"></div>
+                            </figure>
+                            <figcaption class="m-productDetailThumbs__figcaption" itemprop="caption description">Popis obrázku 1</figcaption>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-12 col-md-4">
-                    <table class="table">
-                      <tr>
-                        <th>Parametr</th>
-                        <th>Hodnota</th>
-                      </tr>
-                      <tr> 
-                        <td>Délka vnější</td>
-                        <td>186 cm</td>
-                      </tr>
-                      <tr> 
-                        <td>Délka vnější</td>
-                        <td>186 cm</td>
-                      </tr>
-                      <tr> 
-                        <td>Délka vnější</td>
-                        <td>186 cm</td>
-                      </tr>
-                      <tr> 
-                        <td>Délka vnější</td>
-                        <td>186 cm</td>
-                      </tr>
-                      <tr> 
-                        <td>Délka vnější</td>
-                        <td>186 cm</td>
-                      </tr>
-                      <tr> 
-                        <td>Délka vnější</td>
-                        <td>186 cm</td>
-                      </tr>
-                    </table>
+                  <div class="m-productDetailMain__info"><span class="m-productDetailMain__id">Katalogové číslo: Angeli160</span><span class="m-productDetailMain__id">Záruka: 24 měsíců</span></div>
+                </div>
+                <div class="col-12 col-lg-6 o-productDetail__col">
+                  <div class="o-productDetail__main m-productDetailMain">
+                    <div class="m-productDetailMain__description">
+                      <p class="m-productDetailMain__descriptionTitle">Popis produktu</p>
+                      <p class="m-productDetailMain__descriptionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. <a href="#anchor-product-detail-description">Celý popis produktu</a></p>
+                    </div>
+                    <form class="m-productDetailMain__form" method="post" name="product_detail_form" id="product_detail_form">
+                      <div class="dropdown m-selectBox m-productDetailMain__sizes">
+                        <input class="m-selectBox__honeypot" type="radio" name="productSize" id="productSizeId" required>
+                        <div class="dropdown-toggle m-selectBox__dropdown" id="productSizeDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                          <div class="m-selectBox__dropdownText">Provedení</div><span class="a-icon -cheveron m-selectBox__icon"></span>
+                        </div>
+                        <div class="dropdown-menu m-selectBox__dropdownMenu" aria-labelledby="productSizeDrop">
+                          <label class="m-selectBox__label">
+                            <input class="m-selectBox__input" type="radio" name="productSize" id="productSizeId" required checked>
+                            <div class="m-selectBox__content"><img class="m-selectBox__img" src="img/product-thumb-small.jpg">
+                              <div class="m-selectBox__name">medium</div>
+                              <div class="m-selectBox__price"> 
+                                <div class="m-selectBox__priceOld">5 000 Kč</div>
+                                <div class="m-selectBox__priceNew">2 000 Kč</div>
+                              </div>
+                              <div class="m-selectBox__stock">Skladem</div>
+                            </div>
+                          </label>
+                          <label class="m-selectBox__label">
+                            <input class="m-selectBox__input" type="radio" name="productSize" id="productSizeId" required>
+                            <div class="m-selectBox__content"><img class="m-selectBox__img" src="img/product-thumb-small.jpg">
+                              <div class="m-selectBox__name">largo</div>
+                              <div class="m-selectBox__price"> 
+                                <div class="m-selectBox__priceOld">9 000 Kč</div>
+                                <div class="m-selectBox__priceNew">5 000 Kč</div>
+                              </div>
+                              <div class="m-selectBox__stock">21 dní</div>
+                            </div>
+                          </label>
+                          <label class="m-selectBox__label">
+                            <input class="m-selectBox__input" type="radio" name="productSize" id="productSizeId" required>
+                            <div class="m-selectBox__content"><img class="m-selectBox__img" src="img/product-thumb-small.jpg">
+                              <div class="m-selectBox__name">largo</div>
+                              <div class="m-selectBox__price"> 
+                                <div class="m-selectBox__priceOld">9 000 Kč</div>
+                                <div class="m-selectBox__priceNew">5 000 Kč</div>
+                              </div>
+                              <div class="m-selectBox__stock">21 dní</div>
+                            </div>
+                          </label>
+                          <label class="m-selectBox__label">
+                            <input class="m-selectBox__input" type="radio" name="productSize" id="productSizeId" required>
+                            <div class="m-selectBox__content"><img class="m-selectBox__img" src="img/product-thumb-small.jpg">
+                              <div class="m-selectBox__name">largo</div>
+                              <div class="m-selectBox__price"> 
+                                <div class="m-selectBox__priceOld">9 000 Kč</div>
+                                <div class="m-selectBox__priceNew">5 000 Kč</div>
+                              </div>
+                              <div class="m-selectBox__stock">21 dní</div>
+                            </div>
+                          </label>
+                          <label class="m-selectBox__label">
+                            <input class="m-selectBox__input" type="radio" name="productSize" id="productSizeId" required>
+                            <div class="m-selectBox__content"><img class="m-selectBox__img" src="img/product-thumb-small.jpg">
+                              <div class="m-selectBox__name">largo</div>
+                              <div class="m-selectBox__price"> 
+                                <div class="m-selectBox__priceOld">9 000 Kč</div>
+                                <div class="m-selectBox__priceNew">5 000 Kč</div>
+                              </div>
+                              <div class="m-selectBox__stock">21 dní</div>
+                            </div>
+                          </label>
+                          <label class="m-selectBox__label">
+                            <input class="m-selectBox__input" type="radio" name="productSize" id="productSizeId" required>
+                            <div class="m-selectBox__content"><img class="m-selectBox__img" src="img/product-thumb-small.jpg">
+                              <div class="m-selectBox__name">largo</div>
+                              <div class="m-selectBox__price"> 
+                                <div class="m-selectBox__priceOld">9 000 Kč</div>
+                                <div class="m-selectBox__priceNew">5 000 Kč</div>
+                              </div>
+                              <div class="m-selectBox__stock">21 dní</div>
+                            </div>
+                          </label>
+                          <label class="m-selectBox__label">
+                            <input class="m-selectBox__input" type="radio" name="productSize" id="productSizeId" required>
+                            <div class="m-selectBox__content"><img class="m-selectBox__img" src="img/product-thumb-small.jpg">
+                              <div class="m-selectBox__name">largo</div>
+                              <div class="m-selectBox__price"> 
+                                <div class="m-selectBox__priceOld">9 000 Kč</div>
+                                <div class="m-selectBox__priceNew">5 000 Kč</div>
+                              </div>
+                              <div class="m-selectBox__stock">21 dní</div>
+                            </div>
+                          </label>
+                          <label class="m-selectBox__label">
+                            <input class="m-selectBox__input" type="radio" name="productSize" id="productSizeId" required>
+                            <div class="m-selectBox__content"><img class="m-selectBox__img" src="img/product-thumb-small.jpg">
+                              <div class="m-selectBox__name">largo</div>
+                              <div class="m-selectBox__price"> 
+                                <div class="m-selectBox__priceOld">9 000 Kč</div>
+                                <div class="m-selectBox__priceNew">5 000 Kč</div>
+                              </div>
+                              <div class="m-selectBox__stock">21 dní</div>
+                            </div>
+                          </label>
+                          <label class="m-selectBox__label">
+                            <input class="m-selectBox__input" type="radio" name="productSize" id="productSizeId" required>
+                            <div class="m-selectBox__content"><img class="m-selectBox__img" src="img/product-thumb-small.jpg">
+                              <div class="m-selectBox__name">largo</div>
+                              <div class="m-selectBox__price"> 
+                                <div class="m-selectBox__priceOld">9 000 Kč</div>
+                                <div class="m-selectBox__priceNew">5 000 Kč</div>
+                              </div>
+                              <div class="m-selectBox__stock">21 dní</div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="m-productDetailMain__misc">
+                        <div class="m-productDetailMain__stock"> <span class="a-icon -box -green m-productDetailMain__stockIcon"></span><span class="m-productDetailMain__stockText">Dostupné skladem</span></div>
+                        <div class="m-productDetailMain__tags"><span class="m-productDetailMain__tagSingle">Výrobce: Visby</span></div>
+                      </div>
+                      <div class="m-productDetailMain__priceWrap"><span class="m-productDetailMain__priceOld">22 999 Kč</span>
+                        <h2 class="m-productDetailMain__priceMain">18 546 Kč</h2><span class="m-productDetailMain__priceDPH">16 800 Kč bez DPH</span>
+                      </div>
+                      <div class="m-productDetailMain__cta">
+                        <div class="m-productDetailMain__qty">
+                          <div class="m-numberStepper">
+                            <input class="m-numberStepper__input" type="number" min="1" max="99" value="1" name="cart-item-single-qty">
+                            <div class="m-numberStepper__btnUp"><span class="m-numberStepper__iconUp"></span></div>
+                            <div class="m-numberStepper__btnDown"><span class="m-numberStepper__iconDown"></span></div>
+                          </div>
+                        </div>
+                        <button class="btn m-productDetailMain__button" type="submit" name="buy-button"><span class="a-icon -cart -white m-productDetailMain__icon"></span> Do košíku</button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
-            </section>
-          </div>
-        </div>
-        <div class="tab-pane fade m-tabsContent__pane" id="index-2" role="tabpanel" aria-labelledby="index-2-tab">   
-          <div class="m-tabsContent__collapseToggle" data-toggle="collapse" data-target="#collapseIndexTab-2" aria-expanded="false" aria-controls="#collapseIndexTab-2">Příslušenství</div>
-          <div class="collapse m-tabsContent__collapse" id="collapseIndexTab-2" aria-labelledby="collapseIndexTab-2">
-            <div class="container"> 
-              <div class="o-sectionSale m-productCarousel">
+            </div>
+          </section>
+          <section class="o-sectionVariants">
+            <div class="container">
+              <h1 class="o-sectionSimilar__title">Podobné produkty</h1>
+              <div class="o-sectionVariants m-productCarousel" id="product_swiper_var">
                 <div class="m-productCarousel__content">
                   <div class="swiper-wrapper m-productCarousel__wrap">
                     <div class="swiper-slide m-productCarousel__slide">
@@ -894,198 +784,448 @@
                 <div class="swiper-button-next m-productCarousel__swiperButton -next"></div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="o-sectionSimilar">
-      <div class="container">
-        <h1 class="o-sectionSimilar__title">Podobné produkty</h1>
-        <div class="o-sectionSimilar m-productCarousel" id="product_swiper">
-          <div class="m-productCarousel__content">
-            <div class="swiper-wrapper m-productCarousel__wrap">
-              <div class="swiper-slide m-productCarousel__slide">
-                <div class="m-productCell"><a class="m-productCell__link" href="#">
-                    <div class="m-productCell__top">    
-                      <div class="m-productCell__thumb">
-                        <div class="m-productCell__tagSingle --circle">-50%</div>
-                        <div class="m-productCell__tags">
-                          <div class="m-productCell__tagSingle">
-                            <div class="a-tag -sale">Akce</div>
-                          </div>
-                          <div class="m-productCell__tagSingle">   
-                            <div class="a-tag -new">Novinka</div>
-                          </div>
-                          <div class="m-productCell__tagSingle"> 
-                            <div class="a-tag -recommended">Doporučené</div>
-                          </div>
-                          <div class="m-productCell__tagSingle"> 
-                            <div class="a-tag -top">Top</div>
-                          </div>
-                        </div>
-                        <div class="m-productCell__imgWrap"><img class="lazy m-productCell__img" src="img/placeholder-280x280.png" data-src="img/product-thumb-medium.jpg" alt="#"><span class="lazy m-productCell__preloader"></span></div>
-                      </div>
-                      <div class="m-productCell__delivery">
-                        <p class="m-productCell__deliveryText">Dostupné skladem</p>
-                      </div>
-                      <h4 class="m-productCell__title">Stůl Standard 300 skládací lorem ipsum dolor sit amet</h4>
-                    </div>
-                    <div class="m-productCell__bottom">
-                      <div class="m-productCell__priceWrap">
-                        <div class="m-productCell__price">
-                          <div class="m-productCell__priceOld">999 Kč</div>
-                          <div class="m-productCell__priceMain">899 Kč</div>
-                        </div>
-                      </div>
-                    </div></a></div>
+          </section>
+          <section class="o-sectionProducts o-tabs">
+            <nav class="o-tabs__nav m-tabsNav">
+              <div class="container"> 
+                <div class="nav nav-tabs m-tabsNav__nav" role="tablist"><a class="m-tabsNav__link active" id="index-1-tab" data-toggle="tab" href="#index-1" role="tab" aria-controls="index-1" aria-selected="true">Popis produktu</a><a class="m-tabsNav__link" id="index-2-tab" data-toggle="tab" href="#index-2" role="tab" aria-controls="index-2" aria-selected="false">Příslušenství</a></div>
               </div>
-              <div class="swiper-slide m-productCarousel__slide">
-                <div class="m-productCell"><a class="m-productCell__link" href="#">
-                    <div class="m-productCell__top">    
-                      <div class="m-productCell__thumb">
-                        <div class="m-productCell__tagSingle --circle">-50%</div>
-                        <div class="m-productCell__tags">
-                          <div class="m-productCell__tagSingle">
-                            <div class="a-tag -sale">Akce</div>
-                          </div>
-                          <div class="m-productCell__tagSingle">   
-                            <div class="a-tag -new">Novinka</div>
-                          </div>
-                          <div class="m-productCell__tagSingle"> 
-                            <div class="a-tag -recommended">Doporučené</div>
-                          </div>
-                          <div class="m-productCell__tagSingle"> 
-                            <div class="a-tag -top">Top</div>
-                          </div>
+            </nav>
+            <div class="tab-content o-tabs__content m-tabsContent">
+              <div class="tab-pane fade m-tabsContent__pane show active" id="index-1" role="tabpanel" aria-labelledby="index-1-tab"> 
+                <div class="m-tabsContent__collapseToggle" data-toggle="collapse" data-target="#collapseIndexTab-1" aria-expanded="false" aria-controls="#collapseIndexTab-1">Popis produktu</div>
+                <div class="collapse m-tabsContent__collapse show" id="collapseIndexTab-1" aria-labelledby="collapseIndexTab-1">
+                  <section class="o-productDescription" id="anchor-product-detail-description">
+                    <div class="container"> 
+                      <div class="row">
+                        <div class="col-12 col-md-8">
+                          <p><strong>Popis</strong></p>
+                          <p>Hydrance Optimale Riche je výživný hydratační krém, který je určen pro suchou až velmi suchou dehydratovanou citlivou pleť. Přináší okamžitou a intenzivní hydrataci pleti, která má dlouhotrvající účinek. Krém má vláčnou texturu, která dodává pleti pocit pohodlí. Díky unikátnímu složení se snižuje možnost vzniku alergií. Krém je vhodný jako podklad pod make-up.</p>
+                          <p><strong>Dávkování a způsob užití</strong></p>
+                          <p>Aplikujte krém ráno, anebo večer na dokonale čistou a osušenou pleť.</p>
+                          <p><strong>Složení</strong></p>
+                          <p>Přípravek obsahuje termální vodu Avene, bambucké máslo, meiboserin, lipomucin.</p>
                         </div>
-                        <div class="m-productCell__imgWrap"><img class="lazy m-productCell__img" src="img/placeholder-280x280.png" data-src="img/product-thumb-medium.jpg" alt="#"><span class="lazy m-productCell__preloader"></span></div>
+                        <div class="col-12 col-md-4">
+                          <table class="table">
+                            <tr>
+                              <th>Parametr</th>
+                              <th>Hodnota</th>
+                            </tr>
+                            <tr> 
+                              <td>Délka vnější</td>
+                              <td>186 cm</td>
+                            </tr>
+                            <tr> 
+                              <td>Délka vnější</td>
+                              <td>186 cm</td>
+                            </tr>
+                            <tr> 
+                              <td>Délka vnější</td>
+                              <td>186 cm</td>
+                            </tr>
+                            <tr> 
+                              <td>Délka vnější</td>
+                              <td>186 cm</td>
+                            </tr>
+                            <tr> 
+                              <td>Délka vnější</td>
+                              <td>186 cm</td>
+                            </tr>
+                            <tr> 
+                              <td>Délka vnější</td>
+                              <td>186 cm</td>
+                            </tr>
+                          </table>
+                        </div>
                       </div>
-                      <div class="m-productCell__delivery">
-                        <p class="m-productCell__deliveryText">Dostupné skladem</p>
-                      </div>
-                      <h4 class="m-productCell__title">Stůl Standard 300 skládací lorem ipsum dolor sit amet</h4>
                     </div>
-                    <div class="m-productCell__bottom">
-                      <div class="m-productCell__priceWrap">
-                        <div class="m-productCell__price">
-                          <div class="m-productCell__priceOld">999 Kč</div>
-                          <div class="m-productCell__priceMain">899 Kč</div>
-                        </div>
-                      </div>
-                    </div></a></div>
+                  </section>
+                </div>
               </div>
-              <div class="swiper-slide m-productCarousel__slide">
-                <div class="m-productCell"><a class="m-productCell__link" href="#">
-                    <div class="m-productCell__top">    
-                      <div class="m-productCell__thumb">
-                        <div class="m-productCell__tagSingle --circle">-50%</div>
-                        <div class="m-productCell__tags">
-                          <div class="m-productCell__tagSingle">
-                            <div class="a-tag -sale">Akce</div>
+              <div class="tab-pane fade m-tabsContent__pane" id="index-2" role="tabpanel" aria-labelledby="index-2-tab">   
+                <div class="m-tabsContent__collapseToggle" data-toggle="collapse" data-target="#collapseIndexTab-2" aria-expanded="false" aria-controls="#collapseIndexTab-2">Příslušenství</div>
+                <div class="collapse m-tabsContent__collapse" id="collapseIndexTab-2" aria-labelledby="collapseIndexTab-2">
+                  <div class="container"> 
+                    <div class="o-sectionSale m-productCarousel">
+                      <div class="m-productCarousel__content">
+                        <div class="swiper-wrapper m-productCarousel__wrap">
+                          <div class="swiper-slide m-productCarousel__slide">
+                            <div class="m-productCell"><a class="m-productCell__link" href="#">
+                                <div class="m-productCell__top">    
+                                  <div class="m-productCell__thumb">
+                                    <div class="m-productCell__tagSingle --circle">-50%</div>
+                                    <div class="m-productCell__tags">
+                                      <div class="m-productCell__tagSingle">
+                                        <div class="a-tag -sale">Akce</div>
+                                      </div>
+                                      <div class="m-productCell__tagSingle">   
+                                        <div class="a-tag -new">Novinka</div>
+                                      </div>
+                                      <div class="m-productCell__tagSingle"> 
+                                        <div class="a-tag -recommended">Doporučené</div>
+                                      </div>
+                                      <div class="m-productCell__tagSingle"> 
+                                        <div class="a-tag -top">Top</div>
+                                      </div>
+                                    </div>
+                                    <div class="m-productCell__imgWrap"><img class="lazy m-productCell__img" src="img/placeholder-280x280.png" data-src="img/product-thumb-medium.jpg" alt="#"><span class="lazy m-productCell__preloader"></span></div>
+                                  </div>
+                                  <div class="m-productCell__delivery">
+                                    <p class="m-productCell__deliveryText">Dostupné skladem</p>
+                                  </div>
+                                  <h4 class="m-productCell__title">Stůl Standard 300 skládací lorem ipsum dolor sit amet</h4>
+                                </div>
+                                <div class="m-productCell__bottom">
+                                  <div class="m-productCell__priceWrap">
+                                    <div class="m-productCell__price">
+                                      <div class="m-productCell__priceOld">999 Kč</div>
+                                      <div class="m-productCell__priceMain">899 Kč</div>
+                                    </div>
+                                  </div>
+                                </div></a></div>
                           </div>
-                          <div class="m-productCell__tagSingle">   
-                            <div class="a-tag -new">Novinka</div>
+                          <div class="swiper-slide m-productCarousel__slide">
+                            <div class="m-productCell"><a class="m-productCell__link" href="#">
+                                <div class="m-productCell__top">    
+                                  <div class="m-productCell__thumb">
+                                    <div class="m-productCell__tagSingle --circle">-50%</div>
+                                    <div class="m-productCell__tags">
+                                      <div class="m-productCell__tagSingle">
+                                        <div class="a-tag -sale">Akce</div>
+                                      </div>
+                                      <div class="m-productCell__tagSingle">   
+                                        <div class="a-tag -new">Novinka</div>
+                                      </div>
+                                      <div class="m-productCell__tagSingle"> 
+                                        <div class="a-tag -recommended">Doporučené</div>
+                                      </div>
+                                      <div class="m-productCell__tagSingle"> 
+                                        <div class="a-tag -top">Top</div>
+                                      </div>
+                                    </div>
+                                    <div class="m-productCell__imgWrap"><img class="lazy m-productCell__img" src="img/placeholder-280x280.png" data-src="img/product-thumb-medium.jpg" alt="#"><span class="lazy m-productCell__preloader"></span></div>
+                                  </div>
+                                  <div class="m-productCell__delivery">
+                                    <p class="m-productCell__deliveryText">Dostupné skladem</p>
+                                  </div>
+                                  <h4 class="m-productCell__title">Stůl Standard 300 skládací lorem ipsum dolor sit amet</h4>
+                                </div>
+                                <div class="m-productCell__bottom">
+                                  <div class="m-productCell__priceWrap">
+                                    <div class="m-productCell__price">
+                                      <div class="m-productCell__priceOld">999 Kč</div>
+                                      <div class="m-productCell__priceMain">899 Kč</div>
+                                    </div>
+                                  </div>
+                                </div></a></div>
                           </div>
-                          <div class="m-productCell__tagSingle"> 
-                            <div class="a-tag -recommended">Doporučené</div>
+                          <div class="swiper-slide m-productCarousel__slide">
+                            <div class="m-productCell"><a class="m-productCell__link" href="#">
+                                <div class="m-productCell__top">    
+                                  <div class="m-productCell__thumb">
+                                    <div class="m-productCell__tagSingle --circle">-50%</div>
+                                    <div class="m-productCell__tags">
+                                      <div class="m-productCell__tagSingle">
+                                        <div class="a-tag -sale">Akce</div>
+                                      </div>
+                                      <div class="m-productCell__tagSingle">   
+                                        <div class="a-tag -new">Novinka</div>
+                                      </div>
+                                      <div class="m-productCell__tagSingle"> 
+                                        <div class="a-tag -recommended">Doporučené</div>
+                                      </div>
+                                      <div class="m-productCell__tagSingle"> 
+                                        <div class="a-tag -top">Top</div>
+                                      </div>
+                                    </div>
+                                    <div class="m-productCell__imgWrap"><img class="lazy m-productCell__img" src="img/placeholder-280x280.png" data-src="img/product-thumb-medium.jpg" alt="#"><span class="lazy m-productCell__preloader"></span></div>
+                                  </div>
+                                  <div class="m-productCell__delivery">
+                                    <p class="m-productCell__deliveryText">Dostupné skladem</p>
+                                  </div>
+                                  <h4 class="m-productCell__title">Stůl Standard 300 skládací lorem ipsum dolor sit amet</h4>
+                                </div>
+                                <div class="m-productCell__bottom">
+                                  <div class="m-productCell__priceWrap">
+                                    <div class="m-productCell__price">
+                                      <div class="m-productCell__priceOld">999 Kč</div>
+                                      <div class="m-productCell__priceMain">899 Kč</div>
+                                    </div>
+                                  </div>
+                                </div></a></div>
                           </div>
-                          <div class="m-productCell__tagSingle"> 
-                            <div class="a-tag -top">Top</div>
+                          <div class="swiper-slide m-productCarousel__slide">
+                            <div class="m-productCell"><a class="m-productCell__link" href="#">
+                                <div class="m-productCell__top">    
+                                  <div class="m-productCell__thumb">
+                                    <div class="m-productCell__tagSingle --circle">-50%</div>
+                                    <div class="m-productCell__tags">
+                                      <div class="m-productCell__tagSingle">
+                                        <div class="a-tag -sale">Akce</div>
+                                      </div>
+                                      <div class="m-productCell__tagSingle">   
+                                        <div class="a-tag -new">Novinka</div>
+                                      </div>
+                                      <div class="m-productCell__tagSingle"> 
+                                        <div class="a-tag -recommended">Doporučené</div>
+                                      </div>
+                                      <div class="m-productCell__tagSingle"> 
+                                        <div class="a-tag -top">Top</div>
+                                      </div>
+                                    </div>
+                                    <div class="m-productCell__imgWrap"><img class="lazy m-productCell__img" src="img/placeholder-280x280.png" data-src="img/product-thumb-medium.jpg" alt="#"><span class="lazy m-productCell__preloader"></span></div>
+                                  </div>
+                                  <div class="m-productCell__delivery">
+                                    <p class="m-productCell__deliveryText">Dostupné skladem</p>
+                                  </div>
+                                  <h4 class="m-productCell__title">Stůl Standard 300 skládací lorem ipsum dolor sit amet</h4>
+                                </div>
+                                <div class="m-productCell__bottom">
+                                  <div class="m-productCell__priceWrap">
+                                    <div class="m-productCell__price">
+                                      <div class="m-productCell__priceOld">999 Kč</div>
+                                      <div class="m-productCell__priceMain">899 Kč</div>
+                                    </div>
+                                  </div>
+                                </div></a></div>
+                          </div>
+                          <div class="swiper-slide m-productCarousel__slide">
+                            <div class="m-productCell"><a class="m-productCell__link" href="#">
+                                <div class="m-productCell__top">    
+                                  <div class="m-productCell__thumb">
+                                    <div class="m-productCell__tagSingle --circle">-50%</div>
+                                    <div class="m-productCell__tags">
+                                      <div class="m-productCell__tagSingle">
+                                        <div class="a-tag -sale">Akce</div>
+                                      </div>
+                                      <div class="m-productCell__tagSingle">   
+                                        <div class="a-tag -new">Novinka</div>
+                                      </div>
+                                      <div class="m-productCell__tagSingle"> 
+                                        <div class="a-tag -recommended">Doporučené</div>
+                                      </div>
+                                      <div class="m-productCell__tagSingle"> 
+                                        <div class="a-tag -top">Top</div>
+                                      </div>
+                                    </div>
+                                    <div class="m-productCell__imgWrap"><img class="lazy m-productCell__img" src="img/placeholder-280x280.png" data-src="img/product-thumb-medium.jpg" alt="#"><span class="lazy m-productCell__preloader"></span></div>
+                                  </div>
+                                  <div class="m-productCell__delivery">
+                                    <p class="m-productCell__deliveryText">Dostupné skladem</p>
+                                  </div>
+                                  <h4 class="m-productCell__title">Stůl Standard 300 skládací lorem ipsum dolor sit amet</h4>
+                                </div>
+                                <div class="m-productCell__bottom">
+                                  <div class="m-productCell__priceWrap">
+                                    <div class="m-productCell__price">
+                                      <div class="m-productCell__priceOld">999 Kč</div>
+                                      <div class="m-productCell__priceMain">899 Kč</div>
+                                    </div>
+                                  </div>
+                                </div></a></div>
                           </div>
                         </div>
-                        <div class="m-productCell__imgWrap"><img class="lazy m-productCell__img" src="img/placeholder-280x280.png" data-src="img/product-thumb-medium.jpg" alt="#"><span class="lazy m-productCell__preloader"></span></div>
                       </div>
-                      <div class="m-productCell__delivery">
-                        <p class="m-productCell__deliveryText">Dostupné skladem</p>
-                      </div>
-                      <h4 class="m-productCell__title">Stůl Standard 300 skládací lorem ipsum dolor sit amet</h4>
+                      <div class="swiper-button-prev m-productCarousel__swiperButton -prev"></div>
+                      <div class="swiper-button-next m-productCarousel__swiperButton -next"></div>
                     </div>
-                    <div class="m-productCell__bottom">
-                      <div class="m-productCell__priceWrap">
-                        <div class="m-productCell__price">
-                          <div class="m-productCell__priceOld">999 Kč</div>
-                          <div class="m-productCell__priceMain">899 Kč</div>
-                        </div>
-                      </div>
-                    </div></a></div>
-              </div>
-              <div class="swiper-slide m-productCarousel__slide">
-                <div class="m-productCell"><a class="m-productCell__link" href="#">
-                    <div class="m-productCell__top">    
-                      <div class="m-productCell__thumb">
-                        <div class="m-productCell__tagSingle --circle">-50%</div>
-                        <div class="m-productCell__tags">
-                          <div class="m-productCell__tagSingle">
-                            <div class="a-tag -sale">Akce</div>
-                          </div>
-                          <div class="m-productCell__tagSingle">   
-                            <div class="a-tag -new">Novinka</div>
-                          </div>
-                          <div class="m-productCell__tagSingle"> 
-                            <div class="a-tag -recommended">Doporučené</div>
-                          </div>
-                          <div class="m-productCell__tagSingle"> 
-                            <div class="a-tag -top">Top</div>
-                          </div>
-                        </div>
-                        <div class="m-productCell__imgWrap"><img class="lazy m-productCell__img" src="img/placeholder-280x280.png" data-src="img/product-thumb-medium.jpg" alt="#"><span class="lazy m-productCell__preloader"></span></div>
-                      </div>
-                      <div class="m-productCell__delivery">
-                        <p class="m-productCell__deliveryText">Dostupné skladem</p>
-                      </div>
-                      <h4 class="m-productCell__title">Stůl Standard 300 skládací lorem ipsum dolor sit amet</h4>
-                    </div>
-                    <div class="m-productCell__bottom">
-                      <div class="m-productCell__priceWrap">
-                        <div class="m-productCell__price">
-                          <div class="m-productCell__priceOld">999 Kč</div>
-                          <div class="m-productCell__priceMain">899 Kč</div>
-                        </div>
-                      </div>
-                    </div></a></div>
-              </div>
-              <div class="swiper-slide m-productCarousel__slide">
-                <div class="m-productCell"><a class="m-productCell__link" href="#">
-                    <div class="m-productCell__top">    
-                      <div class="m-productCell__thumb">
-                        <div class="m-productCell__tagSingle --circle">-50%</div>
-                        <div class="m-productCell__tags">
-                          <div class="m-productCell__tagSingle">
-                            <div class="a-tag -sale">Akce</div>
-                          </div>
-                          <div class="m-productCell__tagSingle">   
-                            <div class="a-tag -new">Novinka</div>
-                          </div>
-                          <div class="m-productCell__tagSingle"> 
-                            <div class="a-tag -recommended">Doporučené</div>
-                          </div>
-                          <div class="m-productCell__tagSingle"> 
-                            <div class="a-tag -top">Top</div>
-                          </div>
-                        </div>
-                        <div class="m-productCell__imgWrap"><img class="lazy m-productCell__img" src="img/placeholder-280x280.png" data-src="img/product-thumb-medium.jpg" alt="#"><span class="lazy m-productCell__preloader"></span></div>
-                      </div>
-                      <div class="m-productCell__delivery">
-                        <p class="m-productCell__deliveryText">Dostupné skladem</p>
-                      </div>
-                      <h4 class="m-productCell__title">Stůl Standard 300 skládací lorem ipsum dolor sit amet</h4>
-                    </div>
-                    <div class="m-productCell__bottom">
-                      <div class="m-productCell__priceWrap">
-                        <div class="m-productCell__price">
-                          <div class="m-productCell__priceOld">999 Kč</div>
-                          <div class="m-productCell__priceMain">899 Kč</div>
-                        </div>
-                      </div>
-                    </div></a></div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-button-prev m-productCarousel__swiperButton -prev"></div>
-          <div class="swiper-button-next m-productCarousel__swiperButton -next"></div>
+          </section>
+          <section class="o-sectionSimilar">
+            <div class="container">
+              <h1 class="o-sectionSimilar__title">Podobné produkty</h1>
+              <div class="o-sectionSimilar m-productCarousel" id="product_swiper">
+                <div class="m-productCarousel__content">
+                  <div class="swiper-wrapper m-productCarousel__wrap">
+                    <div class="swiper-slide m-productCarousel__slide">
+                      <div class="m-productCell"><a class="m-productCell__link" href="#">
+                          <div class="m-productCell__top">    
+                            <div class="m-productCell__thumb">
+                              <div class="m-productCell__tagSingle --circle">-50%</div>
+                              <div class="m-productCell__tags">
+                                <div class="m-productCell__tagSingle">
+                                  <div class="a-tag -sale">Akce</div>
+                                </div>
+                                <div class="m-productCell__tagSingle">   
+                                  <div class="a-tag -new">Novinka</div>
+                                </div>
+                                <div class="m-productCell__tagSingle"> 
+                                  <div class="a-tag -recommended">Doporučené</div>
+                                </div>
+                                <div class="m-productCell__tagSingle"> 
+                                  <div class="a-tag -top">Top</div>
+                                </div>
+                              </div>
+                              <div class="m-productCell__imgWrap"><img class="lazy m-productCell__img" src="img/placeholder-280x280.png" data-src="img/product-thumb-medium.jpg" alt="#"><span class="lazy m-productCell__preloader"></span></div>
+                            </div>
+                            <div class="m-productCell__delivery">
+                              <p class="m-productCell__deliveryText">Dostupné skladem</p>
+                            </div>
+                            <h4 class="m-productCell__title">Stůl Standard 300 skládací lorem ipsum dolor sit amet</h4>
+                          </div>
+                          <div class="m-productCell__bottom">
+                            <div class="m-productCell__priceWrap">
+                              <div class="m-productCell__price">
+                                <div class="m-productCell__priceOld">999 Kč</div>
+                                <div class="m-productCell__priceMain">899 Kč</div>
+                              </div>
+                            </div>
+                          </div></a></div>
+                    </div>
+                    <div class="swiper-slide m-productCarousel__slide">
+                      <div class="m-productCell"><a class="m-productCell__link" href="#">
+                          <div class="m-productCell__top">    
+                            <div class="m-productCell__thumb">
+                              <div class="m-productCell__tagSingle --circle">-50%</div>
+                              <div class="m-productCell__tags">
+                                <div class="m-productCell__tagSingle">
+                                  <div class="a-tag -sale">Akce</div>
+                                </div>
+                                <div class="m-productCell__tagSingle">   
+                                  <div class="a-tag -new">Novinka</div>
+                                </div>
+                                <div class="m-productCell__tagSingle"> 
+                                  <div class="a-tag -recommended">Doporučené</div>
+                                </div>
+                                <div class="m-productCell__tagSingle"> 
+                                  <div class="a-tag -top">Top</div>
+                                </div>
+                              </div>
+                              <div class="m-productCell__imgWrap"><img class="lazy m-productCell__img" src="img/placeholder-280x280.png" data-src="img/product-thumb-medium.jpg" alt="#"><span class="lazy m-productCell__preloader"></span></div>
+                            </div>
+                            <div class="m-productCell__delivery">
+                              <p class="m-productCell__deliveryText">Dostupné skladem</p>
+                            </div>
+                            <h4 class="m-productCell__title">Stůl Standard 300 skládací lorem ipsum dolor sit amet</h4>
+                          </div>
+                          <div class="m-productCell__bottom">
+                            <div class="m-productCell__priceWrap">
+                              <div class="m-productCell__price">
+                                <div class="m-productCell__priceOld">999 Kč</div>
+                                <div class="m-productCell__priceMain">899 Kč</div>
+                              </div>
+                            </div>
+                          </div></a></div>
+                    </div>
+                    <div class="swiper-slide m-productCarousel__slide">
+                      <div class="m-productCell"><a class="m-productCell__link" href="#">
+                          <div class="m-productCell__top">    
+                            <div class="m-productCell__thumb">
+                              <div class="m-productCell__tagSingle --circle">-50%</div>
+                              <div class="m-productCell__tags">
+                                <div class="m-productCell__tagSingle">
+                                  <div class="a-tag -sale">Akce</div>
+                                </div>
+                                <div class="m-productCell__tagSingle">   
+                                  <div class="a-tag -new">Novinka</div>
+                                </div>
+                                <div class="m-productCell__tagSingle"> 
+                                  <div class="a-tag -recommended">Doporučené</div>
+                                </div>
+                                <div class="m-productCell__tagSingle"> 
+                                  <div class="a-tag -top">Top</div>
+                                </div>
+                              </div>
+                              <div class="m-productCell__imgWrap"><img class="lazy m-productCell__img" src="img/placeholder-280x280.png" data-src="img/product-thumb-medium.jpg" alt="#"><span class="lazy m-productCell__preloader"></span></div>
+                            </div>
+                            <div class="m-productCell__delivery">
+                              <p class="m-productCell__deliveryText">Dostupné skladem</p>
+                            </div>
+                            <h4 class="m-productCell__title">Stůl Standard 300 skládací lorem ipsum dolor sit amet</h4>
+                          </div>
+                          <div class="m-productCell__bottom">
+                            <div class="m-productCell__priceWrap">
+                              <div class="m-productCell__price">
+                                <div class="m-productCell__priceOld">999 Kč</div>
+                                <div class="m-productCell__priceMain">899 Kč</div>
+                              </div>
+                            </div>
+                          </div></a></div>
+                    </div>
+                    <div class="swiper-slide m-productCarousel__slide">
+                      <div class="m-productCell"><a class="m-productCell__link" href="#">
+                          <div class="m-productCell__top">    
+                            <div class="m-productCell__thumb">
+                              <div class="m-productCell__tagSingle --circle">-50%</div>
+                              <div class="m-productCell__tags">
+                                <div class="m-productCell__tagSingle">
+                                  <div class="a-tag -sale">Akce</div>
+                                </div>
+                                <div class="m-productCell__tagSingle">   
+                                  <div class="a-tag -new">Novinka</div>
+                                </div>
+                                <div class="m-productCell__tagSingle"> 
+                                  <div class="a-tag -recommended">Doporučené</div>
+                                </div>
+                                <div class="m-productCell__tagSingle"> 
+                                  <div class="a-tag -top">Top</div>
+                                </div>
+                              </div>
+                              <div class="m-productCell__imgWrap"><img class="lazy m-productCell__img" src="img/placeholder-280x280.png" data-src="img/product-thumb-medium.jpg" alt="#"><span class="lazy m-productCell__preloader"></span></div>
+                            </div>
+                            <div class="m-productCell__delivery">
+                              <p class="m-productCell__deliveryText">Dostupné skladem</p>
+                            </div>
+                            <h4 class="m-productCell__title">Stůl Standard 300 skládací lorem ipsum dolor sit amet</h4>
+                          </div>
+                          <div class="m-productCell__bottom">
+                            <div class="m-productCell__priceWrap">
+                              <div class="m-productCell__price">
+                                <div class="m-productCell__priceOld">999 Kč</div>
+                                <div class="m-productCell__priceMain">899 Kč</div>
+                              </div>
+                            </div>
+                          </div></a></div>
+                    </div>
+                    <div class="swiper-slide m-productCarousel__slide">
+                      <div class="m-productCell"><a class="m-productCell__link" href="#">
+                          <div class="m-productCell__top">    
+                            <div class="m-productCell__thumb">
+                              <div class="m-productCell__tagSingle --circle">-50%</div>
+                              <div class="m-productCell__tags">
+                                <div class="m-productCell__tagSingle">
+                                  <div class="a-tag -sale">Akce</div>
+                                </div>
+                                <div class="m-productCell__tagSingle">   
+                                  <div class="a-tag -new">Novinka</div>
+                                </div>
+                                <div class="m-productCell__tagSingle"> 
+                                  <div class="a-tag -recommended">Doporučené</div>
+                                </div>
+                                <div class="m-productCell__tagSingle"> 
+                                  <div class="a-tag -top">Top</div>
+                                </div>
+                              </div>
+                              <div class="m-productCell__imgWrap"><img class="lazy m-productCell__img" src="img/placeholder-280x280.png" data-src="img/product-thumb-medium.jpg" alt="#"><span class="lazy m-productCell__preloader"></span></div>
+                            </div>
+                            <div class="m-productCell__delivery">
+                              <p class="m-productCell__deliveryText">Dostupné skladem</p>
+                            </div>
+                            <h4 class="m-productCell__title">Stůl Standard 300 skládací lorem ipsum dolor sit amet</h4>
+                          </div>
+                          <div class="m-productCell__bottom">
+                            <div class="m-productCell__priceWrap">
+                              <div class="m-productCell__price">
+                                <div class="m-productCell__priceOld">999 Kč</div>
+                                <div class="m-productCell__priceMain">899 Kč</div>
+                              </div>
+                            </div>
+                          </div></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev m-productCarousel__swiperButton -prev"></div>
+                <div class="swiper-button-next m-productCarousel__swiperButton -next"></div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-    </section>
+    </main>
     <div class="productDetailResponsive">
       <div class="productDetailResponsive__name">
         <p class="productDetailResponsive__title">Stůl Standard 300 skládací lorem ipsum dolor sit amet</p>

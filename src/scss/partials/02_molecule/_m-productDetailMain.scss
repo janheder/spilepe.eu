@@ -6,18 +6,9 @@
     line-height: 1.25;
     margin-bottom: 1rem;
     padding-bottom: 3rem;
-    color: $purple;
+    color: $text-primary;
     &::after{
         content: none;
-    }
-    &::before {
-        content: "";
-        background: url(../img/border-stripes.svg);
-        height: 5px;
-        width: 100%;
-        position: absolute;
-        left: 0;
-        bottom: 0;
     }
 }
 .m-productDetailMain__misc{
@@ -51,11 +42,15 @@
     @include f-14-primary-semibold;
     margin: 0;
     padding-bottom: 2px;
+    display: none;
 }
 .m-productDetailMain__descriptionText{
     @include f-14-dark-regular;
     color: $text-dark;
     margin: 0;
+    a{
+        display: flex;
+    }
 }
 
 .m-productDetailMain__sizes{
@@ -72,16 +67,19 @@
 .m-productDetailMain__priceWrap{
     flex-grow: 1;
     margin-top: 4rem;
+    background: $bg-light;
+    padding: 2rem;
 }
 .m-productDetailMain__cta{
-    background: rgba(231, 108, 176, 0.2);
+    background: $bg-light;
     border-radius: $border-radius-primary;
     padding: 2rem;
+    padding-top: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 0rem;
 }
 .m-productDetailMain__priceOld{
     @include f-14-dark-semibold;
