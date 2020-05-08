@@ -2,7 +2,7 @@ section{
     padding: 6rem 0;
 }
 section h1{
-    @include f-30-primary-semibold;
+    @include f-24-primary-semibold;
     font-weight: 700;
     text-align: center;
     margin-bottom: 3rem;
@@ -16,9 +16,9 @@ section h1{
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 90px;
+        width: 40px;
 
-        border: 1px $blue dashed;
+        border: 3px $pink-light solid;
     }
 }
 @media screen and (max-width:575px){
