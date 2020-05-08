@@ -288,9 +288,9 @@ $('#show_password_toggler').click(function() {
 
 
 $(document).on('input change','#filter-range-input-1, #filter-range-input-2', function() {
-    $("#filter-range-value-1").text($("#filter-range-input-1").val() + " €");
+    $("#filter-range-value-1").text($("#filter-range-input-1").val() + " Kč");
 
-    $("#filter-range-value-2").text($("#filter-range-input-2").val() + " €");
+    $("#filter-range-value-2").text($("#filter-range-input-2").val() + " Kč");
 
 });
 
@@ -367,8 +367,8 @@ if($(".m-selectBox .m-selectBox__input:checked")){
     $(".m-productDetailMain__priceMain").text(price);
 
     var priceClean = parseFloat($(".m-productDetailMain__priceMain").text().replace(/[^0-9\.]/g, ''));
-    var priceDPH = priceClean-(priceClean*0.21).toFixed(0);
-    $(".m-productDetailMain__priceDPH").text(priceDPH + " € bez DPH");
+    var priceDPH = priceClean-(priceClean*0.21).toFixed(2);
+    $(".m-productDetailMain__priceDPH").text(priceDPH + " Kč bez DPH");
 
     var stock= $(".m-selectBox .m-selectBox__input:checked").siblings(".m-selectBox__content").find(".m-selectBox__stock").text();
     $(".m-productDetailMain__stockText").text(stock);
@@ -386,8 +386,8 @@ $(".m-selectBox .m-selectBox__input").click(function () {
     $(".m-productDetailMain__priceMain").text(price);
     
     var priceClean = parseFloat($(".m-productDetailMain__priceMain").text().replace(/[^0-9\.]/g, ''));
-    var priceDPH= priceClean-(priceClean*0.21).toFixed(0);
-    $(".m-productDetailMain__priceDPH").text(priceDPH + " € bez DPH");
+    var priceDPH= priceClean-(priceClean*0.21).toFixed(2);
+    $(".m-productDetailMain__priceDPH").text(priceDPH + " Kč bez DPH");
 
     var stock= $(".m-selectBox .m-selectBox__input:checked").siblings(".m-selectBox__content").find(".m-selectBox__stock").text();
     $(".m-productDetailMain__stockText").text(stock);
@@ -472,7 +472,7 @@ $(window).bind("load", function() {
         
     }else{platba = 0;}
     
-    $(".m-cartOverview__priceTitle").text((doprava+platba+cena).toFixed(2) + " €").digits(); 
+    $(".m-cartOverview__priceTitle").text((doprava+platba+cena).toFixed(2) + " Kč").digits(); 
 
 });
 
@@ -490,7 +490,7 @@ $('.o-cartDeliveryForm .m-formGroup__input[name="doprava"], .o-cartDeliveryForm 
         
     }else{platba = 0;}
     
-    $(".m-cartOverview__priceTitle").text((doprava+platba+cena).toFixed(2)  + " €").digits()
+    $(".m-cartOverview__priceTitle").text((doprava+platba+cena).toFixed(2)  + " Kč").digits()
 
 });
 
@@ -515,14 +515,14 @@ $("body").on('DOMSubtreeModified', ".m-cartPriceOverview__priceNumber", function
         $(".m-cartFreeShipping__progressBar").css("width", "100%"); 
     }
 
-    $(".m-cartFreeShipping__price").text((valueMax - valueNum ).toFixed(2) + " €");
+    $(".m-cartFreeShipping__price").text((valueMax - valueNum ).toFixed(2) + " Kč");
 
     
     var cartPrice = valueMax - valueNum;
     
     if(cartPrice > 0){
         
-        $(".m-cartFreeShipping__text").html("Nakupte ještě za <span class='m-cartFreeShipping__price'>" + (cartPrice).toFixed(2)  + "</span> € a máte dopravu zdarma");
+        $(".m-cartFreeShipping__text").html("Nakupte ještě za <span class='m-cartFreeShipping__price'>" + (cartPrice).toFixed(2)  + "</span> Kč a máte dopravu zdarma");
 
     }else{
         $(".m-cartFreeShipping__text").text("Máte dopravu zdarma");
