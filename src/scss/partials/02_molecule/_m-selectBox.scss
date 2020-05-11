@@ -42,7 +42,7 @@
     margin: 0;
     margin-bottom: 5px;
     background: $bg-white;
-    border: 1px dashed $border-grey;
+    border: 1px solid $border-grey;
     cursor: pointer;
     border-radius: $border-radius-primary;
 }
@@ -99,7 +99,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        border: 1px dashed $green;
+        border: 1px solid $green;
     }
    
 

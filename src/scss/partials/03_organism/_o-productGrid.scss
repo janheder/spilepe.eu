@@ -1,12 +1,17 @@
 .o-productGrid{
     display: flex;
     flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
 }
 .o-productGrid .m-productCell{
     width: 25%;
-    padding: 10px;
+    padding: 0px;
+}
+.o-productGrid .m-productCell__link{
+    border-right: 0; 
+    border-bottom: 0;
+}
+.o-productGrid .m-productCell:nth-child(4n+4) .m-productCell__link{
+    border-right: 1px solid $border-grey; 
 }
 @media screen and (max-width:991px){
     .o-productGrid{
@@ -15,8 +20,9 @@
     }
     .o-productGrid .m-productCell{
         width: 25%;
-        padding: 5px;
+        padding: 0px;
     }
+
 }
 @media screen and (max-width:768px){
     .o-productGrid{
@@ -25,7 +31,10 @@
     }
     .o-productGrid .m-productCell{
         width: 50%;
-        padding: 5px;
+        padding: 0px;
+    }
+    .o-productGrid .m-productCell:nth-child(2n+2) .m-productCell__link{
+        border-right: 1px solid $border-grey; 
     }
 }
 @media screen and (max-width:500px){

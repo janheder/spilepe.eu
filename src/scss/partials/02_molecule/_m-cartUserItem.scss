@@ -3,13 +3,13 @@
     position: relative;
     height: 100%;
     background: $bg-white;
-    border: 1px dashed $border-grey;
+    border: 1px solid $border-grey;
     padding: 20px;
 }
 .m-cartUserItem__top{
     padding-bottom: 2rem;
     margin-bottom: 2rem;
-    border-bottom: 1px dashed $border-grey;
+    border-bottom: 1px solid $border-grey;
 }
 .m-cartUserItem_title{
     @include f-18-primary-semibold;

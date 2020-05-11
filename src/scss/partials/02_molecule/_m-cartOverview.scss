@@ -7,13 +7,13 @@
     justify-content: center;
     border-radius: $border-radius-primary;
     margin: 0px 0;
-    border: 1px dashed $border-grey;
+    border: 1px solid $border-grey;
 }
 .m-cartOverview__title{
     @include f-18-primary-semibold;
     margin-bottom: 0;
     padding-bottom: 2rem;
-    border-bottom: 1px dashed $border-grey;
+    border-bottom: 1px solid $border-grey;
     text-align: left;
     width: 100%;
     line-height: 1;
@@ -23,7 +23,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px dashed $border-grey;
+    border-bottom: 1px solid $border-grey;
     padding: 2rem 0;
     width: 100%;
 }
@@ -112,7 +112,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    border-top: 1px dashed $border-grey;
+    border-top: 1px solid $border-grey;
     margin-top: 2rem;
 }
 .m-cartOverview__priceTitle{

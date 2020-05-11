@@ -4,8 +4,8 @@
 .m-productDetailMain__title{
     text-align: left;
     line-height: 1.25;
-    margin-bottom: 1rem;
-    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    padding-bottom: 0rem;
     color: $text-primary;
     &::after{
         content: none;
@@ -16,6 +16,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    border: 1px solid $border-grey;
+    padding: 20px;
 }
 .m-productDetailMain__rating{
 
@@ -25,8 +27,8 @@
 }
 .m-productDetailMain__tags{
     display: flex;
-    flex-direction: row;
-    padding-top: 2rem;
+    flex-direction: column;
+
 }
 .m-productDetailMain__tagSingle{
     @include f-14-dark-regular;
@@ -121,13 +123,13 @@
 }
 .m-productDetailMain__stock{
     display: flex;
-    flex-direction: row;
-    margin-top: 4rem;
+    flex-direction: column;
+    color: #8F8F8F;
 }
 .m-productDetailMain__stockText{
     @include f-14-dark-regular;
     color: $text-green;
-    margin-left: 10px;
+
 }
 .m-productDetailMain__id{
     @include f-14-dark-regular;

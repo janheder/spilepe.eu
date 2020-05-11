@@ -1,5 +1,5 @@
 .o-subCategories{
-    margin: auto -10px;
+    margin: auto -5px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -7,7 +7,7 @@
     margin-bottom: -2rem;
 }
 .o-subCategories__singleWrap{
-    padding: 10px;
+    padding: 5px;
     width: 16.666%;
 }
 .o-subCategories__img{
@@ -24,6 +24,7 @@
     align-items: center;
     border-radius: $border-radius-primary;
     box-shadow: none;
+    border: 1px solid $border-grey;
 
     &:hover, &:active, &:focus{
         text-decoration: none;
@@ -31,7 +32,8 @@
     }
 }
 .o-subCategories__title{
-    @include f-16-primary-regular;
+    @include f-16-white-regular;
+    background: rgba($black, 0.6);
 }
 @media screen and (max-width: 991px){
     .o-subCategories{

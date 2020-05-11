@@ -602,7 +602,7 @@ $('.m-productCarousel').each(function(index, element){
     var carousel_main = new Swiper('.s'+index, {
         lazy: true,
         autoplay: false,
-        spaceBetween: 20,
+        spaceBetween: -1,
         grabCursor: true,
         slidesPerView: 4,
         zoom: false,
@@ -622,7 +622,7 @@ $('.m-productCarousel').each(function(index, element){
                 slidesPerView: 2
             },
             500: {
-                spaceBetween: 10,
+                spaceBetween: -1,
                 slidesPerView: 2
             }
         }

@@ -132,7 +132,7 @@ input{
 
     &.-radiobutton, &.-checkbox, &.-switch{
         background: transparent;
-        border: 1px dashed $border-medium;
+        border: 1px solid $border-medium;
         min-height: 5.4rem;
         display: flex;
         flex-direction: row;
@@ -314,7 +314,7 @@ input{
     padding: 0 2rem;
     border: 0;
     background: transparent;
-    border: 1px dashed $border-medium;
+    border: 1px solid $border-medium;
     border-radius: $border-radius-primary;
     width: 100%;
 
