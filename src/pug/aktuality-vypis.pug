@@ -6,22 +6,32 @@ html(lang=lang)
         include partials/_modal-login.pug
         header.o-header
             include partials/_navMain.pug
-            include partials/_navProducts.pug
-
-        section.o-pageHeading
-            include partials/_breadcrumb-transparent.pug
-            .container.o-pageHeading__container
-                h1.o-pageHeading__title Aktuality
 
         main
             .container
-                .row                                       
-                    - for (var i=0; i<9; i++)
-                        .col-12.col-sm-12.col-md-4
-                            include partials/_news-single.pug
+                .mainTop
+                    .mainTop__menu
+                        .mainTop__menuToggle Všechny kategorie
+                        include partials/_navProducts.pug
+
+                    include partials/_breadcrumb.pug
 
 
-                include partials/_pagination.pug
+                .mainWrapper
+                    .container
+                        section.o-pageHeading.-news
+    
+                            .container.o-pageHeading__container
+                                h1.o-pageHeading__title Lorem ipsum dolor sit amet
+                                p.o-pageHeading__text Napsáno: 1. 1. 1970
+
+                        .row                                       
+                            - for (var i=0; i<9; i++)
+                                .col-12.col-sm-12.col-md-4
+                                    include partials/_news-single.pug
+
+
+                        include partials/_pagination.pug
 
 
         include partials/_footer.pug
