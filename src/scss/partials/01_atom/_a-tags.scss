@@ -10,18 +10,26 @@
     border-radius: 0;
     position: relative;
     margin-left: 0px;
+    color: #520339;
 }
 .a-tag.-sale{
     background: $pink-light;
+    border: 1px solid $pink;
 }
 .a-tag.-new{
-    background: $bg-yellow;
+    background: #FFFFB8;
+    border: 1px solid #D4B106;
+    color: #874D00;
 }
 .a-tag.-recommended{
-    background: $bg-pink;
+    background: #BAE7FF;
+    border: 1px solid #096DD9;
+    color: #002766;
 }
 .a-tag.-top{
-    background: $bg-blue;
+    background: #D9F7BE;
+    border: 1px solid #389E0D;
+    color: #135200;
 }
 
 @media screen and (max-width: 991px){

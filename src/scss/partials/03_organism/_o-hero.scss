@@ -10,9 +10,15 @@
     .o-navProducts{
         position: absolute;
         margin-top: 20px;
+        left: 20px;
     }
     .o-navProducts__collapse {
         top: 0;
+    }
+}
+@media screen and (min-width: 992px){
+    .o-hero .o-navProducts__collapse {
+        right: 40px;
     }
 }
 
@@ -109,11 +115,16 @@
     padding: 20px;
     text-align: left;
     z-index: 5;
-
+    width: 100%;
     max-width: 100%;
+
+    .container{
+        padding-left: 360px;
+    }
 }
+
 .m-heroCarousel__title{
-    @include f-48-primary-semibold;
+    @include f-36-primary-semibold;
     font-weight: 700;
     margin-bottom: 4rem;
 

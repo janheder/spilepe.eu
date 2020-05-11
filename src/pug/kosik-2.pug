@@ -10,7 +10,7 @@ html(lang=lang)
         section.o-cartNav
             .container.o-cartNav__container
                 .o-cartNav__single.-complete
-                    .o-cartNav__number 1
+                    .o-cartNav__number ✓
                     .o-cartNav__title Nákupní košík
                     
                 .o-cartNav__single.-active
@@ -37,62 +37,64 @@ html(lang=lang)
 
         main
             .container
-                .row
+                .mainWrapper
+                    .container
+                        .row
 
-                    .col-12.col-sm-12.col-md-12.col-lg-12
+                            .col-12.col-sm-12.col-md-12.col-lg-12
 
-                        form.o-cartDeliveryForm(method="post" action="" name="delivery_form" id="delivery_form")
-                        
-                            h2.o-cartDeliveryForm__title Zvolte způsob dopravy
+                                form.o-cartDeliveryForm(method="post" action="" name="delivery_form" id="delivery_form")
+                                
+                                    h2.o-cartDeliveryForm__title Zvolte způsob dopravy
 
-                            .o-cartDeliveryForm__item
-                                .o-form__group.m-formGroup.-radiobutton
-                                    input.m-formGroup__input(type="radio" name="doprava" id="delivery_form_delivery-1" required)
-                                    span.m-formGroup__radiobutton.a-radiobutton
-                                    label.m-formGroup__label.-bold(for="delivery_form_delivery-1") Osobní odběr
-                                        span.m-formGroup__text na adrese Paskov, rudé armády 77 (po osobní tel. domluvě)
-                                    label.m-formGroup__price(for="delivery_form_delivery-1") 0 Kč
+                                    .o-cartDeliveryForm__item
+                                        .o-form__group.m-formGroup.-radiobutton
+                                            input.m-formGroup__input(type="radio" name="doprava" id="delivery_form_delivery-1" required)
+                                            span.m-formGroup__radiobutton.a-radiobutton
+                                            label.m-formGroup__label.-bold(for="delivery_form_delivery-1") Osobní odběr
+                                                span.m-formGroup__text na adrese Paskov, rudé armády 77 (po osobní tel. domluvě)
+                                            label.m-formGroup__price(for="delivery_form_delivery-1") 0 Kč
 
-                            .o-cartDeliveryForm__item
-                                .o-form__group.m-formGroup.-radiobutton
-                                    input.m-formGroup__input(type="radio" name="doprava" id="delivery_form_delivery-2" required checked)
-                                    span.m-formGroup__radiobutton.a-radiobutton
-                                    label.m-formGroup__label.-bold(for="delivery_form_delivery-2") GLS
-                                        span.m-formGroup__text přepravní společnost
-                                    label.m-formGroup__price(for="delivery_form_delivery-2") 149 Kč
-
-
-
-                            h2.o-cartDeliveryForm__title Zvolte způsob platby
-
-                            .o-cartDeliveryForm__item
-                                .o-form__group.m-formGroup.-radiobutton
-                                    input.m-formGroup__input(type="radio" name="platba" id="delivery_form_payment-1" required checked)
-                                    span.m-formGroup__radiobutton.a-radiobutton
-                                    label.m-formGroup__label.-bold(for="delivery_form_payment-1") V hotovosti
-                                        span.m-formGroup__text Zaplatíte osobně na prodejně
-                                    label.m-formGroup__price(for="delivery_form_payment-1") 10 Kč
-
-                            .o-cartDeliveryForm__item
-                                .o-form__group.m-formGroup.-radiobutton
-                                    input.m-formGroup__input(type="radio" name="platba" id="delivery_form_payment-2" required disabled)
-                                    span.m-formGroup__radiobutton.a-radiobutton
-                                    label.m-formGroup__label.-bold(for="delivery_form_payment-2") Dobírka
-                                        span.m-formGroup__text Celkovou částku zaplatíte při dodání zboží
-                                    label.m-formGroup__price(for="delivery_form_payment-2") 10 Kč
-
-                            .o-cartDeliveryForm__item
-                                .o-form__group.m-formGroup.-radiobutton
-                                    input.m-formGroup__input(type="radio" name="platba" id="delivery_form_payment-3" required)
-                                    span.m-formGroup__radiobutton.a-radiobutton
-                                    label.m-formGroup__label.-bold(for="delivery_form_payment-3") Převodem
-                                        span.m-formGroup__text celkovou částku převedete na náš účet předem
-                                    label.m-formGroup__price(for="delivery_form_payment-3") 0 Kč
+                                    .o-cartDeliveryForm__item
+                                        .o-form__group.m-formGroup.-radiobutton
+                                            input.m-formGroup__input(type="radio" name="doprava" id="delivery_form_delivery-2" required checked)
+                                            span.m-formGroup__radiobutton.a-radiobutton
+                                            label.m-formGroup__label.-bold(for="delivery_form_delivery-2") GLS
+                                                span.m-formGroup__text přepravní společnost
+                                            label.m-formGroup__price(for="delivery_form_delivery-2") 149 Kč
 
 
-                            .m-cartButtons
-                                a.btn.-dark(href="#") Krok zpět
-                                button.btn(type="submit" id="delivery-form-submit") Osobní údaje #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]
+
+                                    h2.o-cartDeliveryForm__title Zvolte způsob platby
+
+                                    .o-cartDeliveryForm__item
+                                        .o-form__group.m-formGroup.-radiobutton
+                                            input.m-formGroup__input(type="radio" name="platba" id="delivery_form_payment-1" required checked)
+                                            span.m-formGroup__radiobutton.a-radiobutton
+                                            label.m-formGroup__label.-bold(for="delivery_form_payment-1") V hotovosti
+                                                span.m-formGroup__text Zaplatíte osobně na prodejně
+                                            label.m-formGroup__price(for="delivery_form_payment-1") 10 Kč
+
+                                    .o-cartDeliveryForm__item
+                                        .o-form__group.m-formGroup.-radiobutton
+                                            input.m-formGroup__input(type="radio" name="platba" id="delivery_form_payment-2" required disabled)
+                                            span.m-formGroup__radiobutton.a-radiobutton
+                                            label.m-formGroup__label.-bold(for="delivery_form_payment-2") Dobírka
+                                                span.m-formGroup__text Celkovou částku zaplatíte při dodání zboží
+                                            label.m-formGroup__price(for="delivery_form_payment-2") 10 Kč
+
+                                    .o-cartDeliveryForm__item
+                                        .o-form__group.m-formGroup.-radiobutton
+                                            input.m-formGroup__input(type="radio" name="platba" id="delivery_form_payment-3" required)
+                                            span.m-formGroup__radiobutton.a-radiobutton
+                                            label.m-formGroup__label.-bold(for="delivery_form_payment-3") Převodem
+                                                span.m-formGroup__text celkovou částku převedete na náš účet předem
+                                            label.m-formGroup__price(for="delivery_form_payment-3") 0 Kč
+
+
+                                    .m-cartButtons
+                                        a.btn.-dark(href="#") Krok zpět
+                                        button.btn(type="submit" id="delivery-form-submit") Osobní údaje #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]
 
 
                     

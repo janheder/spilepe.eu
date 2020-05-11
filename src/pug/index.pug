@@ -71,35 +71,6 @@ html(lang=lang)
             .container
                 .mainWrapper
 
-                    section.o-sectionBanners
-                        .container
-                            .row   
-                                .col-12.col-md-6
-                                    a.o-sectionBanners__link.b-bgCover__wrap(href="#")
-                                        img.o-sectionBanners__img(src=URLbase+"img/index-banner1.jpg" alt="" title="")
-
-                                .col-12.col-md-6
-                                    a.o-sectionBanners__link.b-bgCover__wrap(href="#")
-                                        img.o-sectionBanners__img(src=URLbase+"img/index-banner2.jpg" alt="" title="")
-
-
-
-
-                    section.o-sectionCategories
-                        .container
-                            h1.o-sectionCategories__title Populární kategorie
-                            .row    
-                                - for (var i=0; i<3; i++)
-                                    .col-12.col-md-4
-                                        a.o-sectionCategories__single.m-categoryCell(href="#")
-                                            img.m-categoryCell__img(src=URLbase+"img/product-thumb-medium.jpg" alt="#" title="#")
-                                            h3.m-categoryCell__title Dětské postýlky
-                                            p.m-categoryCell__text Kovová konstrukce na dětskou dřevěnou postýlku slouží jako držák na nebesa.Kovová konstrukce jde připevnit ke každému typu dětské postýlky 
-                                            span.btn.-ghost Zobrazit nabídku
-
-
-
-
 
                     section.o-sectionSale
                         .container
@@ -122,6 +93,22 @@ html(lang=lang)
                                     
                                 .swiper-button-prev.m-productCarousel__swiperButton.-prev
                                 .swiper-button-next.m-productCarousel__swiperButton.-next
+
+
+                    section.o-sectionCategories
+                        .container
+                            h1.o-sectionCategories__title Oblíbené kategorie
+                            .row    
+                                - for (var i=0; i<3; i++)
+                                    .col-12.col-md-4
+                                        a.o-sectionCategories__single.m-categoryCell(href="#")
+                                            img.m-categoryCell__img(src=URLbase+"img/product-thumb-medium.jpg" alt="#" title="#")
+                                            h3.m-categoryCell__title Dětské postýlky
+                                            p.m-categoryCell__text Kovová konstrukce na dětskou dřevěnou postýlku slouží jako držák na nebesa.Kovová konstrukce jde připevnit ke každému typu dětské postýlky 
+                                            span.btn.-ghost Zobrazit nabídku
+
+
+
 
                     section.o-sectionProducts.o-tabs
 

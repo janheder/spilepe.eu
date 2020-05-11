@@ -15,9 +15,9 @@
 }
 .m-productCarousel__swiperButton, .o-hero__swiperButton{
     background: rgba(0,0,0,0.5);
-    border-radius: 50%;
-    height: 48px;
-    width: 48px;
+    border-radius: 0%;
+    height: 40px;
+    width: 40px;
     z-index: 3;
 
     &::after{

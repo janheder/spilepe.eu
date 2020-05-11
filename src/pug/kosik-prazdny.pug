@@ -6,14 +6,21 @@ html(lang=lang)
         include partials/_modal-login.pug
         header.o-header
             include partials/_navMain.pug
-            include partials/_navProducts.pug
         main
             .container
-                .o-cartEmpty
-                    img.o-cartEmpty__img(src=URLbase+"img/cart-empty.svg" alt="Váš košík je prázdný" title="Váš košík je prázdný")
-                    h1.o-cartEmpty__title Váš košík je prázdný
-                    p.o-cartEmpty__text Pro pokračování v nákupu prosím nejprve vložte vybraný produkt do košíku.
-                    a.btn.o-cartEmpty__link(href="#") Začít nakupovat #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]
+                .mainTop
+                    .mainTop__menu
+                        .mainTop__menuToggle Všechny kategorie
+                        include partials/_navProducts.pug
+
+                    include partials/_breadcrumb.pug
+                .mainWrapper
+                    .container
+                        .o-cartEmpty
+                            img.o-cartEmpty__img(src=URLbase+"img/cart-empty.svg" alt="Váš košík je prázdný" title="Váš košík je prázdný")
+                            h1.o-cartEmpty__title Váš košík je prázdný
+                            p.o-cartEmpty__text Pro pokračování v nákupu prosím nejprve vložte vybraný produkt do košíku.
+                            a.btn.o-cartEmpty__link(href="#") Začít nakupovat #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]
 
 
 

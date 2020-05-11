@@ -52,11 +52,11 @@
 }
 .o-cartNav__single.-complete{
     .o-cartNav__title{
-        color: $pink;
+        color: $green;
     }
     .o-cartNav__number{
         color: $text-white;
-        /*background: $bg-brand-secondary;*/
+        background: $green;
 
     }
     &:hover, &:active, &:focus{

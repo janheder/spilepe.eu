@@ -314,7 +314,7 @@ input{
     padding: 0 2rem;
     border: 0;
     background: transparent;
-    border: 1px solid $border-medium;
+    border: 1px solid $border-grey;
     border-radius: $border-radius-primary;
     width: 100%;
 
@@ -326,7 +326,7 @@ input{
             cursor: not-allowed;
         }
         & ~ .m-formGroup__radiobutton::before, & ~ .m-formGroup__checkbox::before{
-            border: 2px solid $border-medium;
+            border: 2px solid $border-grey;
             cursor: not-allowed;
         }
         & ~ .m-formGroup__label{
