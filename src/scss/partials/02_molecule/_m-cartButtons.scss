@@ -1,7 +1,8 @@
 .m-cartButtons{
     display: flex;
     flex-direction: row;
-    margin: 4rem 0 0 0;
+	margin: 4rem 0 0 0;
+	padding-bottom: 2rem;
 
     .btn{
 		margin-right: 10px;
@@ -16,9 +17,10 @@
 
 @media screen and (max-width: 575px){
 	.m-cartButtons{
-    display: flex;
-    flex-direction: row;
+		display: flex;
+		flex-direction: row;
 		margin: 2rem 0 0 0;
+
 	}
 	.m-cartButtons .btn:first-child .a-btnIcon {
 		display: none;

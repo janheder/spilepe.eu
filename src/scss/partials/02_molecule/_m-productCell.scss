@@ -57,7 +57,7 @@
     max-height: 100%;
 }
 .m-productCell__title{
-    @include f-16-primary-regular;
+    @include f-14-primary-regular;
     text-align: left;
     margin: 0;
     font-weight: 600;
@@ -77,16 +77,16 @@
     right: 0;
     top: 0;
     border-radius: 50%;
-    height: 40px;
-    width: 40px;
+    height: 44px;
+    width: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: $red;
     z-index: 2;
     color: $text-white;
-    font-size: 1.3rem;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 .m-productCell__bottom{
     width:100%;
@@ -115,7 +115,7 @@
 .m-productCell__priceOld{
     text-decoration: line-through;
     @include f-14-semibold-regular;
-    margin-right: 10px;
+    margin-right: 5px;
     line-height: 1;
 }
 .m-productCell__priceMain{

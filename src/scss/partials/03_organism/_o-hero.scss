@@ -3,7 +3,19 @@
     max-width: 1920px;
     margin: 0 auto;
     padding: 0;
+
+    .container {
+        position: relative;
+    }
+    .o-navProducts{
+        position: absolute;
+        margin-top: 20px;
+    }
+    .o-navProducts__collapse {
+        top: 0;
+    }
 }
+
 .o-hero__row{
     height: 100%;
     margin-right: -5px;
@@ -97,14 +109,13 @@
     padding: 20px;
     text-align: left;
     z-index: 5;
-    width: 1180px;
+
     max-width: 100%;
 }
 .m-heroCarousel__title{
     @include f-48-primary-semibold;
     font-weight: 700;
     margin-bottom: 4rem;
-    max-width: 560px;
 
 }
 .m-heroCarousel__description{

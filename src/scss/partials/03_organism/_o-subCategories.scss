@@ -4,7 +4,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 2rem;
-    margin-bottom: -2rem;
 }
 .o-subCategories__singleWrap{
     padding: 5px;
@@ -16,7 +15,7 @@
 }
 .o-subCategories__single{
     background: $bg-white;
-    padding: 2rem;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -25,6 +24,7 @@
     border-radius: $border-radius-primary;
     box-shadow: none;
     border: 1px solid $border-grey;
+    position: relative;
 
     &:hover, &:active, &:focus{
         text-decoration: none;
@@ -34,6 +34,12 @@
 .o-subCategories__title{
     @include f-16-white-regular;
     background: rgba($black, 0.6);
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px 10px;
 }
 @media screen and (max-width: 991px){
     .o-subCategories{

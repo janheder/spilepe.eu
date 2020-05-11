@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    background: rgba(231, 108, 176, 0.2);
+    background: $blue-light;
 
     &::after{
         content: "";
@@ -65,7 +65,7 @@
     position: relative;
 
     &[aria-expanded="true"]{
-        background: $pink;
+        background: $white;
         color: $text-primary;
 
         .o-filter__icon{

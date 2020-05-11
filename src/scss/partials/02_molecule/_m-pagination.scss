@@ -13,7 +13,7 @@
         content: none;
     }
     &.-active .m-pagination__link{
-        background: $purple;
+        background: $blue;
         color: $text-white;
     }
     &.-disabled .m-pagination__link{
@@ -27,16 +27,17 @@
     border-bottom-left-radius: $border-radius-primary;
 }
 .m-pagination__link{
-    padding: 0px 15px;
+    padding: 0px 12px;
     color: $text-primary;
     border: 0;
     background: transparent;
     border-radius: $border-radius-primary;
-    height: 40px;
+    height: 32px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-size: 13px;
 
     &:hover, &:active, &:focus{
         background: $bg-light;

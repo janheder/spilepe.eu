@@ -6,9 +6,11 @@ html(lang=lang)
         include partials/_modal-login.pug
         header.o-header
             include partials/_navMain.pug
-            include partials/_navProducts.pug
-        section.o-hero
 
+        section.o-hero
+            .container
+
+                include partials/_navProducts.pug
             .o-hero__swiper.m-heroCarousel(id="hero_swiper")
                 .m-heroCarousel__content
                     .swiper-wrapper.m-heroCarousel__wrap
@@ -23,8 +25,9 @@ html(lang=lang)
                                         img.swiper-lazy.m-heroCarousel__img.b-bgCover__img(data-src=URLbase+"img/carousel/1.jpg" alt="#")
                                     .swiper-lazy-preloader.m-heroCarousel__preloader.-light
                                     figcaption.m-heroCarousel__caption
-                                        h2.m-heroCarousel__title Velké povánoční slevy na všechny matrace
-                                        span.btn(href="#") Více informací #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]
+                                        .container
+                                            h2.m-heroCarousel__title Velké povánoční slevy na všechny matrace
+                                            span.btn(href="#") Více informací #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]
 
 
 
@@ -38,8 +41,9 @@ html(lang=lang)
                                         img.swiper-lazy.m-heroCarousel__img.b-bgCover__img(data-src=URLbase+"img/carousel/2.jpg" alt="#")
                                     .swiper-lazy-preloader.m-heroCarousel__preloader.-light
                                     figcaption.m-heroCarousel__caption
-                                        h2.m-heroCarousel__title Nová kolekce lorem ipsum
-                                        span.btn(href="#") Více informací #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]
+                                        .container
+                                            h2.m-heroCarousel__title Nová kolekce lorem ipsum
+                                            span.btn(href="#") Více informací #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]
 
 
                         .swiper-slide.m-heroCarousel__slide.b-bgCover__wrap
@@ -52,8 +56,9 @@ html(lang=lang)
                                         img.swiper-lazy.m-heroCarousel__img.b-bgCover__img(data-src=URLbase+"img/carousel/3.jpg" alt="#")
                                     .swiper-lazy-preloader.m-heroCarousel__preloader.-light
                                     figcaption.m-heroCarousel__caption
-                                        h2.m-heroCarousel__title Nová kolekce lorem ipsum
-                                        span.btn(href="#") Více informací #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]
+                                        .container
+                                            h2.m-heroCarousel__title Nová kolekce lorem ipsum
+                                            span.btn(href="#") Více informací #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]
 
 
                     .swiper-pagination.swiper-pagination-white.swiper-pagination-clickable.swiper-pagination-bullets.m-heroCarousel__pagination

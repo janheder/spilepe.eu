@@ -1,6 +1,5 @@
 .o-cartNav{
-    background: rgba(231,108,176,0.05);
-    background-image: url(../img/bg-news.png);
+    background: $white;
     padding: 0;
 }
 .o-cartNav__container{
@@ -24,32 +23,31 @@
     @include f-16-primary-regular;
     margin-bottom: 0px;
     margin-left: 15px;
+    font-weight: 600;
 }
 .o-cartNav__number{
-    @include f-16-primary-regular;
+    @include f-14-primary-regular;
+
     border-radius: 50%;
-    height: 40px;
-    width: 40px;
+    height: 28px;
+    width: 28px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     /*background: $bg-primary;*/
-    color: $text-white;
+    color: $white;
+    background: #434351;
     z-index: 2;
-    background-image: url("../img/cart-point.svg");
-    background-position: center center;
-    background-repeat: no-repeat;
 }
 
 .o-cartNav__single.-active{
     .o-cartNav__title{
-        color: $text-brand;
+        color: $pink-dark;
     }
     .o-cartNav__number{
-        color: $text-white;
+        background: $pink-dark;
         /*background: $bg-brand;*/
-        background-image: url("../img/cart-point-active.svg");
     }
 }
 .o-cartNav__single.-complete{
@@ -59,7 +57,7 @@
     .o-cartNav__number{
         color: $text-white;
         /*background: $bg-brand-secondary;*/
-        background-image: url("../img/cart-point-complete.svg");
+
     }
     &:hover, &:active, &:focus{
         text-decoration: none;

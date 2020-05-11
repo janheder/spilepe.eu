@@ -17,7 +17,7 @@
     justify-content: space-between;
     align-items: flex-end;
     border: 1px solid $border-grey;
-    padding: 20px;
+    padding: 10px 20px;
 }
 .m-productDetailMain__rating{
 
@@ -50,8 +50,10 @@
     @include f-14-dark-regular;
     color: $text-dark;
     margin: 0;
+    margin-bottom: 20px;
     a{
         display: flex;
+        font-size: 14px;
     }
 }
 
