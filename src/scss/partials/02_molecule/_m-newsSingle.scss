@@ -44,8 +44,8 @@
 }
 .m-newsSingle__date{
     @include f-14-dark-regular;
-    font-size: 13px;
-    color: $text-medium;
+    font-size: 14px;
+    color: $blue;
 }
 .m-newsSingle__bottom{
     padding: 1.5rem 0;
@@ -57,6 +57,7 @@
     height: 4.5rem;
     overflow: hidden;
     margin: 0;
+    font-weight: 600;
 }
 .m-newsSingle__text{
     @include f-14-primary-regular;

@@ -119,7 +119,7 @@
     max-width: 100%;
 
     .container{
-        padding-left: 360px;
+        padding-left: 340px;
     }
 }
 
@@ -127,7 +127,7 @@
     @include f-36-primary-semibold;
     font-weight: 700;
     margin-bottom: 4rem;
-
+    max-width: 50%;
 }
 .m-heroCarousel__description{
     @include f-18-white-regular;

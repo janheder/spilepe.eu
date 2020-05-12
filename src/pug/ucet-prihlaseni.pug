@@ -6,48 +6,56 @@ html(lang=lang)
         include partials/_modal-login.pug
         header.o-header
             include partials/_navMain.pug
-            include partials/_navProducts.pug
+
         include partials/_modal-question.pug
-
-        section.o-pageHeading
-            include partials/_breadcrumb-transparent.pug
-            .container.o-pageHeading__container
-                h1.o-pageHeading__title Přihlášení
-                p.o-pageHeading__text Jako registrovaný uživatel získává slevu ve výši 1% na veškeré zboží, které není aktuálně ve slevě.
-
 
         main
             .container
-                .row
-                    .col-12.col-sm-12.col-md-12.col-lg-3
+                .mainTop
+                    .mainTop__menu
+                        .mainTop__menuToggle Všechny kategorie
+                        include partials/_navProducts.pug
 
-                    .col-12.col-sm-12.col-md-12.col-lg-6
+                    include partials/_breadcrumb.pug
+                .mainWrapper
 
-                        form.o-form(method="post" action="" class="login-form" name="login_form")
+                    .container
+                        section.o-pageHeading
+                            .container.o-pageHeading__container
+                                h1.o-pageHeading__title Přihlášení
+                                p.o-pageHeading__text Jako registrovaný uživatel získává slevu ve výši 1% na veškeré zboží, které není aktuálně ve slevě.
 
-                            .m-alert.-danger Zadali jste špatné údaje
+            
+                        .row
+                            .col-12.col-sm-12.col-md-12.col-lg-3
 
-                            .o-form__group.m-formGroup
-                                input.m-formGroup__input(type="email" name="login_form_email" id="login_form_email" autocomplete="email" required placeholder=" ")
-                                label.m-formGroup__label(for="login_form_email") Emailová adresa
-                                span.m-formGroup__error Neplatný email
-                                span.m-formGroup__success
+                            .col-12.col-sm-12.col-md-12.col-lg-6
 
-                            .o-form__group.m-formGroup
-                                input.m-formGroup__input(type="password" name="login_form_password" id="login_form_password" autocomplete="password" required placeholder=" ")
-                                label.m-formGroup__label(for="login_form_password") Heslo
-                                span.m-formGroup__error Neplatné heslo
-                                span.m-formGroup__success
+                                form.o-form(method="post" action="" class="login-form" name="login_form")
 
-                            .o-form__group.m-formGroup
-                                a.o-form__link.-alignRight(href="#") Obnovit zapomenuté heslo
+                                    .m-alert.-danger Zadali jste špatné údaje
 
-                            .o-form__group.m-formGroup
-                                button.btn.-fullWidth(type="submit" id="login_form_submit") Přihlásit se #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]
+                                    .o-form__group.m-formGroup
+                                        input.m-formGroup__input(type="email" name="login_form_email" id="login_form_email" autocomplete="email" required placeholder=" ")
+                                        label.m-formGroup__label(for="login_form_email") Emailová adresa
+                                        span.m-formGroup__error Neplatný email
+                                        span.m-formGroup__success
 
-                            span.o-form__text Nemáte u nás účet? #[a.o-form__link(href="#") Zaregistrujte se]
+                                    .o-form__group.m-formGroup
+                                        input.m-formGroup__input(type="password" name="login_form_password" id="login_form_password" autocomplete="password" required placeholder=" ")
+                                        label.m-formGroup__label(for="login_form_password") Heslo
+                                        span.m-formGroup__error Neplatné heslo
+                                        span.m-formGroup__success
 
-                    .col-12.col-sm-12.col-md-12.col-lg-3
+                                    .o-form__group.m-formGroup
+                                        a.o-form__link.-alignRight(href="#") Obnovit zapomenuté heslo
+
+                                    .o-form__group.m-formGroup
+                                        button.btn.-fullWidth(type="submit" id="login_form_submit") Přihlásit se #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]
+
+                                    span.o-form__text Nemáte u nás účet? #[a.o-form__link(href="#") Zaregistrujte se]
+
+                            .col-12.col-sm-12.col-md-12.col-lg-3
 
      
 

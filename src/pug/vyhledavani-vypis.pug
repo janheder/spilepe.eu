@@ -6,33 +6,40 @@ html(lang=lang)
         include partials/_modal-login.pug
         header.o-header
             include partials/_navMain.pug
-            include partials/_navProducts.pug
 
-        section.o-pageHeading
-            include partials/_breadcrumb-transparent.pug
-            .container.o-pageHeading__container
-                h1.o-pageHeading__title Výsledky vyhledávání pro výraz: "postel"
-
-        
         main
             .container
+                .mainTop
+                    .mainTop__menu
+                        .mainTop__menuToggle Všechny kategorie
+                        include partials/_navProducts.pug
+
+                    include partials/_breadcrumb.pug
+                .mainWrapper
+
+                    .container
+                        section.o-pageHeading
+                            .container.o-pageHeading__container
+                                h1.o-pageHeading__title Výsledky vyhledávání pro výraz: "postel"
 
 
-                .o-productPagination
-                    .o-productPagination__resultNumber 1 - 30 z 322 produktů
 
 
-                    include partials/_pagination.pug
+                        .o-productPagination
+                            .o-productPagination__resultNumber 1 - 30 z 322 produktů
 
 
-                .o-productGrid
-                    - for (var i=0; i<20; i++)
-                        include partials/_single-product-cell.pug
+                            include partials/_pagination.pug
 
 
-                .o-productBottomButton
-                    a.btn.o-productBottomButton__btn(href="#") Dalších 20 produktů
-                    include partials/_pagination.pug
+                        .o-productGrid
+                            - for (var i=0; i<20; i++)
+                                include partials/_single-product-cell.pug
+
+
+                        .o-productBottomButton
+                            a.btn.o-productBottomButton__btn(href="#") Dalších 20 produktů
+                            include partials/_pagination.pug
 
  
 
