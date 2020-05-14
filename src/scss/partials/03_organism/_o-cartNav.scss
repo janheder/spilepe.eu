@@ -17,7 +17,20 @@
     align-items: center;
     justify-content: center;
     z-index: 1;
-    
+    &::after{
+        content: "";
+        height: 17px;
+        width: 17px;
+        background: url("../img/arrow-icon.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: 0;
+        transform: translate(50%);
+    }
+}
+.o-cartNav__single:last-child::after{
+    content: none;
 }
 .o-cartNav__title{
     @include f-16-primary-regular;

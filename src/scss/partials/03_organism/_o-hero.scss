@@ -122,6 +122,13 @@
         padding-left: 340px;
     }
 }
+@media screen and (max-width: 991px){
+    .m-heroCarousel__caption{
+        .container{
+            padding-left: 20px;
+        }
+    }
+}
 
 .m-heroCarousel__title{
     @include f-36-primary-semibold;

@@ -35,11 +35,16 @@
             margin-left: 0;
             margin-right: 1.2rem;
         }
+
     }
     .a-icon{
         display: inline-block;
         height: 8px;
         width: 5px;
+        &.-big{
+            height: 14px;
+            width: 14px;
+        }
     }
     &:hover, &:active, &:focus{
         color: $text-white;

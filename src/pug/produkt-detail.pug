@@ -136,9 +136,15 @@ html(lang=lang)
 
 
                                             .m-productDetailMain__priceWrap
-                                                span.m-productDetailMain__priceOld 22 999 Kč
-                                                h2.m-productDetailMain__priceMain 18 546 Kč
-                                                span.m-productDetailMain__priceDPH 16 800 Kč bez DPH
+                                                .m-productDetailMain__priceWrapInner
+                                                    span.m-productDetailMain__priceOld 22 999 Kč
+                                                    h2.m-productDetailMain__priceMain 18 546 Kč
+                                                    span.m-productDetailMain__priceDPH 16 800 Kč bez DPH
+                                                .m-productDetailMain__priceWrapContact
+                                                    img.m-productDetailMain__priceWrapContactImg(src=URLbase+"img/call-icon.png")
+                                                    .m-productDetailMain__priceWrapContactWrap
+                                                        .m-productDetailMain__priceWrapContactTitle Máš problém s nákupem?
+                                                        .m-productDetailMain__priceWrapContactNum +420 727 877 380
 
 
                                             .m-productDetailMain__cta

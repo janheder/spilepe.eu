@@ -73,6 +73,7 @@
     margin-top: 4rem;
     background: $bg-light;
     padding: 2rem;
+    display: flex;
 }
 .m-productDetailMain__cta{
     background: $bg-light;
@@ -84,6 +85,23 @@
     justify-content: flex-start;
     align-items: center;
     margin-top: 0rem;
+}
+.m-productDetailMain__priceWrapContact{
+    display: flex;
+    padding-left: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+}
+.m-productDetailMain__priceWrapContactTitle{
+    font-size: 16px;
+}
+.m-productDetailMain__priceWrapContactWrap{
+    padding-left: 20px;
+}
+.m-productDetailMain__priceWrapContactNum{
+    font-size: 18px;
+    font-weight: 700;
 }
 .m-productDetailMain__priceOld{
     @include f-14-dark-semibold;

@@ -179,6 +179,9 @@
     }
     .o-navProducts.-active{
         transform: translateX(0%);
+        left: 0;
+        position: fixed;
+        margin: 0;
     }
     .o-navProducts__accordion{
         flex-direction: column;

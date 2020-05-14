@@ -1,19 +1,26 @@
 .m-cartFreeShipping{
     margin-top: 10px;
+    position: relative;
 }
 .m-cartFreeShipping__progress{
     background: $bg-light;
+    height: 40px;
 }
 .m-cartFreeShipping__progressBar{
-    background: $bg-green;
+    background: #D9F7BE;
 }
 .m-cartFreeShipping__text{
     @include f-14-primary-regular;
+    color: #237804;
     text-align: right;
     margin: 0;
     margin-top: 5px;
+    position: absolute;
+    left: 20px;
+    top: 5px;
+
 }
 .m-cartFreeShipping__price{
-    color: $text-brand;
+    color: #237804;
     font-weight: 500;
 }
