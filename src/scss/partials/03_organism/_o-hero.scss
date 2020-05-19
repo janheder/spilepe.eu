@@ -11,6 +11,13 @@
         position: absolute;
         margin-top: 20px;
         left: 20px;
+        width: 280px;
+        padding: 0;
+
+        &:hover{
+            padding-right: calc(100% - 280px);
+            width: 100%;
+        }
     }
     .o-navProducts__collapse {
         top: 0;

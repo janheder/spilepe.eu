@@ -82,11 +82,15 @@
     .m-productCell__title{
         padding: 0;
         padding-bottom: 5px;
+        width: 100%;
     }
     .m-productCell__priceMain{
         font-size: 16px;
     }
     .m-productCell__deliveryText{
         flex-grow: 1;
+    }
+    .m-productCell__bottom {
+        flex-wrap: wrap; 
     }
 }
