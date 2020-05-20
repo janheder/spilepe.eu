@@ -154,17 +154,28 @@
     align-items: center;
     margin-bottom: 0;
     bottom: 0;
+    max-width: 1180px;
+    margin: 0 auto;
+    left: 50% !important;
+    transform: translate(-50%,0px);
+    padding-left: 290px;
 
     .swiper-pagination-bullet{
-        height: 10px;
-        width: 10px;
-        margin: 2px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33.333%;
+        margin: 0 !important;
         background: $bg-white;
-        opacity: 0.4;
+        opacity: 1;
+        border-radius: 0;
+        font-weight: 500;
     }
     .swiper-pagination-bullet-active{
         background: $bg-white;
         opacity: 1;
+        color: $bg-primary;
     }
 }
 @media screen and (max-width: 991px){
@@ -176,6 +187,9 @@
 
         padding-bottom: 3rem;
         line-height: 1.4;
+    }
+    .m-heroCarousel__pagination{
+        padding-left: 0;
     }
 }
 @media screen and (max-width: 575px){

@@ -4,7 +4,7 @@ html(lang=lang)
     include partials/_header.pug  
     body
         include partials/_modal-login.pug
-        header.o-header
+        header.o-header.-cart
             include partials/_navMain.pug
             include partials/_navProducts.pug
         section.o-cartNav
@@ -26,7 +26,6 @@ html(lang=lang)
                     .o-cartNav__title Shrnutí objednávky
 
 
-
         section.o-cartNavResponsive
             a.o-cartNavResponsive__link.-prev(href="/kosik.html?krok=2")
                 span.a-icon.-cheveron.o-cartNavResponsive__icon
@@ -44,7 +43,7 @@ html(lang=lang)
                         .a-cartResponsiveError Prosím zadejte své osobní údaje nebo se přihlaste.
 
                         .row
-                            .col-12.col-sm-12.col-md-12.col-lg-8.register-form-col
+                            .col-12.col-sm-12.col-md-12.col-lg-12.register-form-col
                                 form.o-form.-disabled(method="post" action="" name="register_form" id="register_form")
 
                                     a.o-form__collapseToggler(data-toggle="collapse" id="js-registerCollpaseToggler" href="#register-collapse" aria-expanded="true" aria-controls="register-collapse") Bez registrace #[span.a-icon.-cheveron.o-form__collapseTogglerIcon]

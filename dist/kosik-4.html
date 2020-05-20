@@ -598,6 +598,31 @@
     <script src="js/plugins/photoswipe-ui-default.min.js"></script>
     <script src="js/plugins/swiper.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <script>
+      let labels = ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'];
+      var carousel_main = new Swiper('.m-heroCarousel__content', {
+      	lazy: true,
+      	autoplay: {
+      		delay: 59999000,
+      	},
+      	spaceBetween: 0,
+      	grabCursor: true,
+      	zoom: false,
+      	loop: true,
+      	pagination: {
+      		el: '.m-heroCarousel__pagination',
+      		clickable: true,
+      		renderBullet: function (index, className) { return '<div class="' + className + '">' + (labels[index])+  '</div>';},
+      	},
+      	navigation: {
+      		nextEl: '.o-hero__swiperButton.-next',
+      		prevEl: '.o-hero__swiperButton.-prev',
+      	},
+      });
+      
+      
+      
+    </script>
     <!-- Search autocomplete test-->
     <script>
       var options = {

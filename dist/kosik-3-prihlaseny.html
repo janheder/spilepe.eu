@@ -89,7 +89,7 @@
         </div>
       </div>
     </div>
-    <header class="o-header">
+    <header class="o-header -cart">
       <nav class="o-headerNav">
         <div class="container o-headerNav__container">
           <div class="o-headerNav__contact">
@@ -263,7 +263,7 @@
           <div class="container">
             <div class="a-cartResponsiveError">Prosím zadejte své osobní údaje nebo se přihlaste.</div>
             <div class="row">
-              <div class="col-12 col-sm-12 col-md-12 col-lg-8 register-form-col">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 register-form-col">
                 <form class="o-form -disabled" method="post" action="" name="register_form" id="register_form"><a class="o-form__collapseToggler" data-toggle="collapse" id="js-registerCollpaseToggler" href="#register-collapse" aria-expanded="true" aria-controls="register-collapse">Bez registrace <span class="a-icon -cheveron o-form__collapseTogglerIcon"></span></a>
                   <div class="collapse o-form__collapse show" id="register-collapse">
                     <h2 class="o-form__title">Jste přihlášen jako: Petr Novák</h2>
@@ -549,6 +549,31 @@
     <script src="js/plugins/photoswipe-ui-default.min.js"></script>
     <script src="js/plugins/swiper.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <script>
+      let labels = ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'];
+      var carousel_main = new Swiper('.m-heroCarousel__content', {
+      	lazy: true,
+      	autoplay: {
+      		delay: 59999000,
+      	},
+      	spaceBetween: 0,
+      	grabCursor: true,
+      	zoom: false,
+      	loop: true,
+      	pagination: {
+      		el: '.m-heroCarousel__pagination',
+      		clickable: true,
+      		renderBullet: function (index, className) { return '<div class="' + className + '">' + (labels[index])+  '</div>';},
+      	},
+      	navigation: {
+      		nextEl: '.o-hero__swiperButton.-next',
+      		prevEl: '.o-hero__swiperButton.-prev',
+      	},
+      });
+      
+      
+      
+    </script>
     <!-- Search autocomplete test-->
     <script>
       var options = {
