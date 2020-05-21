@@ -89,6 +89,10 @@
     }
     .m-productCell__deliveryText{
         flex-grow: 1;
+        display: flex;
+        img{
+            
+        }
     }
     .m-productCell__bottom {
         flex-wrap: wrap; 

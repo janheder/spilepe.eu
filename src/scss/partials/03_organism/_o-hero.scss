@@ -160,6 +160,7 @@
     transform: translate(-50%,0px);
     padding-left: 290px;
 
+
     .swiper-pagination-bullet{
         height: 64px;
         display: flex;
@@ -171,6 +172,7 @@
         opacity: 1;
         border-radius: 0;
         font-weight: 500;
+        border-right: 1px solid $border-grey;
     }
     .swiper-pagination-bullet-active{
         background: $bg-white;

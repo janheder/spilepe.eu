@@ -32,8 +32,9 @@
 }
 .m-productDetailMain__tagSingle{
     @include f-14-dark-regular;
-    color: $text-dark;
+    color: $bg-primary;
     margin: 0px;
+    font-weight: 600;
 }
 .m-productDetailMain__description{
     padding-top: 2rem;

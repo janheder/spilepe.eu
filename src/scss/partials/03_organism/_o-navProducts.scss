@@ -72,8 +72,8 @@
     background: transparent;
 
     &:hover, &:active, &:focus{
-        color: $text-white;
-        background: $blue-dark;
+        color: $text-primary;
+        background: $bg-light;
     }
     &:last-child::after{
         content: none;
