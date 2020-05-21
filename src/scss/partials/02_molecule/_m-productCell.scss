@@ -146,6 +146,12 @@
     font-weight: 400;
     text-align: left;
     font-size: 13px;
+    display: flex;
+
+    align-items: center;
+    img{
+        margin-right: 5px;
+    }
 }
 
 .m-productCell__hover{
