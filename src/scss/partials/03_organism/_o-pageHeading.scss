@@ -7,7 +7,7 @@
         padding-bottom: 0;
 
         .o-pageHeading__text{
-            margin-bottom: 4rem;
+            margin-bottom: 0rem;
         }
     }
 }
@@ -54,10 +54,10 @@
 }
 .o-pageHeading__thumbWrap{
     height: 400px;
-    max-width: 780px;
     margin: 0 auto;
     margin-top: 3rem;
     z-index: 2;
+    margin-bottom: 4rem;
 }
 
 @media (max-width: 991px){

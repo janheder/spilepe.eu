@@ -7,9 +7,15 @@
     .container {
         position: relative;
     }
+    .mainTop__menuToggle {
+        position: absolute;
+        height: 46px;
+        z-index: 9;
+        top: 20px;
+    }
     .o-navProducts{
         position: absolute;
-        margin-top: 20px;
+        margin-top: 66px;
         left: 20px;
         width: 280px;
         padding: 0;
@@ -159,7 +165,7 @@
     left: 50% !important;
     transform: translate(-50%,0px);
     padding-left: 290px;
-
+    z-index: 1;
 
     .swiper-pagination-bullet{
         height: 64px;
