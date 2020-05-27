@@ -469,6 +469,11 @@ input{
         display: none;
     }
 }
+@supports (-ms-ime-align:auto) {
+    .m-formGroup.-textarea .m-formGroup__label{
+        top: 0;
+    }
+}
 
 
 .login-form{

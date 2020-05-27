@@ -4,8 +4,9 @@
     padding: 20px 0;
 }
 .m-contactItem__title{
-    background: $bg-dark;
+    background: $bg-light;
     @include f-18-white-semibold;
+    color: $blue;
     padding: 15px 20px;
     margin: 0;
     border-top-right-radius: $border-radius-primary;
@@ -26,7 +27,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 20px 0;
+    justify-content: center;
+    padding: 15px;
+    border: 1px solid $border-grey;
+    margin: 20px 0;
 }
 .m-contactItem__icon {
     margin-right: 10px;

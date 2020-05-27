@@ -46,6 +46,19 @@ form.o-filter(id="js-filter" method="post" name="filter-form" action="")
 
 
             .o-filter__single
+                .o-filter__link(id="headingFilter-x" data-toggle="collapse" data-target="#collapseFilter-x" aria-expanded="false" aria-controls="collapseFilter-x") Cena #[span.a-icon.-cheveron.o-filter__icon]
+                .collapse.o-filter__collapse(id="collapseFilter-x" aria-labelledby="headingFilter-x" data-parent="#accordionFilter")
+                    .container.o-filter__content
+                        .o-filter__formGroup.m-formGroup.-range
+                            .m-formGroup__rangewWrap
+                                input.m-formGroup__input(type="range" name="filter-range-input-1" id="filter-range-input-1" min="50" max="250" step="1" value="50")
+                                input.m-formGroup__input(type="range" name="filter-range-input-2" id="filter-range-input-2" min="50" max="250" step="1" value="250")
+                            span.m-formGroup__range.a-range
+                            label.m-formGroup__label(for="filter-range-input-1" id="filter-range-value-1") #[span 0] Kč
+                            label.m-formGroup__label(for="filter-range-input-2" id="filter-range-value-2") #[span 1000] Kč
+
+
+            .o-filter__single
                 .o-filter__link(id="headingFilter-2" data-toggle="collapse" data-target="#collapseFilter-2" aria-expanded="false" aria-controls="collapseFilter-2") Cena #[span.a-icon.-cheveron.o-filter__icon]
                 .collapse.o-filter__collapse(id="collapseFilter-2" aria-labelledby="headingFilter-2" data-parent="#accordionFilter")
                     .container.o-filter__content

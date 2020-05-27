@@ -40,9 +40,11 @@ html(lang=lang)
                 .mainWrapper
                     .container
 
-                        .m-alert.-success Všechny údaje pěčlivě zkontrolujte a následně objednávku potvrďte tlačítkem "Odeslat objednávku"
+                        
 
-                        form(method="post" action="" name="cart_form")
+                        form.cart-form(method="post" action="" name="cart_form" )
+                            .m-alert.-success Všechny údaje pěčlivě zkontrolujte a následně objednávku potvrďte tlačítkem "Odeslat objednávku"
+                            
                             .m-cartItemTop
                                 .m-cartItemTop__item.-img Produkt
                                 .m-cartItemTop__col

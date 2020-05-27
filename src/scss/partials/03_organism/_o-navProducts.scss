@@ -70,6 +70,7 @@
     justify-content: flex-start;
     align-items: center;
     background: transparent;
+    font-weight: 500;
 
     &:hover, &:active, &:focus{
         color: $text-primary;
@@ -122,6 +123,41 @@
     padding-top: 20px;
     text-align: center;
     @include f-16-primary-semibold;
+}
+
+.o-navProducts__link[data-toggle="collapse"] + .o-navProducts__linkDesktop{
+
+        &::before, &::after{
+            content: "";
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            width: 10px;
+            height: 2px;
+            left: auto;
+            transform: translateY(-50%);
+            background: $bg-medium;
+        }
+        &::after{
+            transform: translateY(-50%) rotate(90deg);
+        }
+        &:hover, &:active, &:focus{
+            &::after{
+                width: 10px;
+            }
+        }
+        &[aria-expanded="true"]{
+            
+            &::after{
+                background: $bg-grey;
+                top: 0;
+                left: 0;
+                height: 1px;
+                width: 100%;
+                transform: none;
+            } 
+        }
+    
 }
 
 

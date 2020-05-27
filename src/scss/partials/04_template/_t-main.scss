@@ -43,6 +43,9 @@ main{
     .mainTop__menu .o-navProducts {
         top: 0px;
     }
+    .mainTop__menuToggle{
+        display: none;
+    }
 }
 @media screen and (max-width:768px){
     main{

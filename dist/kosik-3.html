@@ -267,7 +267,10 @@
             <div class="a-cartResponsiveError">Prosím zadejte své osobní údaje nebo se přihlaste.</div>
             <div class="row">
               <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                <form class="o-form -paddingRight" method="post" action="" name="register_form" id="register_form"><a class="o-form__collapseToggler" data-toggle="collapse" id="js-registerCollpaseToggler" href="#register-collapse" aria-expanded="true" aria-controls="register-collapse">Bez registrace <span class="a-icon -cheveron o-form__collapseTogglerIcon"></span></a>
+                <form class="o-form -paddingRight" method="post" action="" name="register_form" id="register_form">
+                  <div class="cartLoginBanner">
+                    <div class="cartLoginBanner__title">Už máš u nás účet?</div><a class="btn" href="#">Přihlásit se <span class="a-btnIcon"><span class="a-icon -cheveron -white"></span></span>  </a>
+                  </div><a class="o-form__collapseToggler" data-toggle="collapse" id="js-registerCollpaseToggler" href="#register-collapse" aria-expanded="true" aria-controls="register-collapse">Bez registrace <span class="a-icon -cheveron o-form__collapseTogglerIcon"></span></a>
                   <div class="collapse o-form__collapse show" id="register-collapse">
                     <h2 class="o-form__title">Bez registrace</h2>
                     <div class="o-form__divider m-formDivider">Osobní údaje</div>
@@ -439,6 +442,10 @@
                     </div>
                     <div class="collapse o-form__groupCollapse" id="formRegisterCollapse">
                       <div class="o-form__group m-formGroup">
+                        <input class="m-formGroup__input" type="text" name="register_form_register_username" id="register_form_register_username" autocomplete="username" required placeholder=" ">
+                        <label class="m-formGroup__label" for="register_form_register_username">Uživatelské jméno</label><span class="m-formGroup__error">Neplatné už. jméno</span><span class="m-formGroup__success"></span>
+                      </div>
+                      <div class="o-form__group m-formGroup">
                         <input class="m-formGroup__input" type="password" name="register_form_register_password" id="register_form_register_password" autocomplete="password" placeholder=" ">
                         <label class="m-formGroup__label" for="register_form_register_password">Heslo</label><span class="m-formGroup__error">Neplatné heslo</span><span class="m-formGroup__success"></span>
                       </div>
@@ -571,7 +578,7 @@
     <script src="js/plugins/swiper.min.js"></script>
     <script src="js/scripts.min.js"></script>
     <script>
-      let labels = ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'];
+      let labels = ['Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'];
       var carousel_main = new Swiper('.m-heroCarousel__content', {
       	lazy: true,
       	autoplay: {

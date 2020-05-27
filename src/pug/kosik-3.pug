@@ -44,7 +44,12 @@ html(lang=lang)
                         .row
                             .col-12.col-sm-12.col-md-12.col-lg-12
                                 form.o-form.-paddingRight(method="post" action="" name="register_form" id="register_form")
+                                    
+                                    .cartLoginBanner
+                                        .cartLoginBanner__title Už máš u nás účet?
+                                        a.btn(href="#") Přihlásit se #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]  
 
+                                        
                                     a.o-form__collapseToggler(data-toggle="collapse" id="js-registerCollpaseToggler" href="#register-collapse" aria-expanded="true" aria-controls="register-collapse") Bez registrace #[span.a-icon.-cheveron.o-form__collapseTogglerIcon]
                                     .collapse.o-form__collapse.show(id="register-collapse")
 
@@ -265,11 +270,19 @@ html(lang=lang)
 
                                         .collapse.o-form__groupCollapse(id="formRegisterCollapse")
 
+
+                                            .o-form__group.m-formGroup
+                                                input.m-formGroup__input(type="text" name="register_form_register_username" id="register_form_register_username" autocomplete="username" required placeholder=" ")
+                                                label.m-formGroup__label(for="register_form_register_username") Uživatelské jméno
+                                                span.m-formGroup__error Neplatné už. jméno
+                                                span.m-formGroup__success
+
                                             .o-form__group.m-formGroup
                                                 input.m-formGroup__input(type="password" name="register_form_register_password" id="register_form_register_password" autocomplete="password" placeholder=" ")
                                                 label.m-formGroup__label(for="register_form_register_password") Heslo
                                                 span.m-formGroup__error Neplatné heslo
                                                 span.m-formGroup__success
+
 
 
                                         .o-form__legal Vložením údajů beru na vědomí #[a(href="#") zpracování osobních údajů]
