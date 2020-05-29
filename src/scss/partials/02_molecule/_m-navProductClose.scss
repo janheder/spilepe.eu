@@ -28,4 +28,8 @@
         opacity: 1;
         transform: translateX(260px);
     }
+    .o-hero .o-navProducts.-active + .m-navProductsClose{
+        opacity: 1;
+        transform: translateX(280px);
+    }
 }
