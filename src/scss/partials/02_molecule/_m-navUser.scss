@@ -31,13 +31,13 @@
     align-items: flex-start;
     padding-left: 15px;
     height: 100%;
-    display: none;
+
 }
 .m-navUser__text{
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 1;
-    color: $text-medium;
+    color: $white;
 }
 .m-navUser__title{
     @include f-16-primary-semibold;
@@ -46,6 +46,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     font-weight: 700;
+    color: $white;
 }
 .m-navUser__collapse{
     position: absolute;
