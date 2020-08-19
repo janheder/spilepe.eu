@@ -104,6 +104,7 @@
     flex-direction: row;
     align-items: baseline;
     width: 100%; 
+    flex-wrap: wrap;
 }
 .m-productCell__ctaForm{
     .btn{
@@ -123,6 +124,7 @@
     padding-right: 10px;
     flex-shrink: 0;
     align-items: baseline;
+    padding-top: 5px;
 }
 .m-productCell__priceOld{
     text-decoration: line-through;
