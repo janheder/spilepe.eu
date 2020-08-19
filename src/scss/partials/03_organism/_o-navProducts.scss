@@ -17,7 +17,7 @@
     box-shadow: $box-shadow-primary;
 }
 .mainTop .mainTop__menu .o-navProducts__accordion{
-    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,2);
 }
 
 .o-navProducts__item{
@@ -68,7 +68,7 @@
     font-size: 1.4rem;
     color: $text-primary;
     padding: 0 2rem;
-    height: 37px;
+    height: 40px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
