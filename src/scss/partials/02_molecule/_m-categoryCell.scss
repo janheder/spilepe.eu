@@ -39,6 +39,7 @@
     z-index: -1;
     bottom: 0;
     right: 0;
+    mix-blend-mode: darken;
 }
 .m-categoryCell__title{
     @include f-24-primary-regular;
