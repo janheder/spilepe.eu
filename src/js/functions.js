@@ -206,9 +206,35 @@ $(document).click(function(e){
 });
 
 $(document).ready(function(){
-    var pricePhone = $(".m-productDetailMain__priceMain").text();
-    $(".productDetailResponsive__price").text(pricePhone);
+    $(".m-selectBox__label").change( function(){
+        var pricePhone = $(".m-productDetailMain__priceMain").text();
+        $(".productDetailResponsive__price").text(pricePhone);
+    });
 });
+
+
+
+$(document).ready(function(){
+    $(".o-cartDeliveryForm__item .m-formGroup__input").change( function(){
+        
+        
+        var priceAll = parseInt($(".m-cartBarResponsive").data("price"));
+        if($("input[name='doprava']:checked").length){
+           var doprava = parseInt($("input[name='doprava']:checked ~ .m-formGroup__price").text().split(' ')[0]);
+        }else{
+            var doprava = 0;
+        }
+        if($("input[name='platba']:checked").length){
+            var platba = parseInt($("input[name='platba']:checked ~ .m-formGroup__price").text().split(' ')[0]); 
+         }else{
+            var platba = 0;
+         } 
+        
+        var sum = priceAll + doprava + platba;
+        $(".m-cartBarResponsive__price span").text(sum)
+    });
+});
+
 
 // =============================================================================
 // FORM VALIDATION AND REQUIRED SETUP
@@ -372,8 +398,8 @@ $(".m-selectBox .m-selectBox__input").click(function () {
 
     $(".m-selectBox .m-selectBox__dropdownText").text("Vybráno: " + value);
     var vybrano = $(".m-selectBox__input:checked + .m-selectBox__content .m-selectBox__img").attr("src").split("/img_produkty/male/").pop();
-    $(".swiper-slide-active .m-productDetailCarousel__link").attr("href", "https://www.spilepe.eu/img_produkty/nejvetsi/" + vybrano);
-    $(".swiper-slide-active .m-productDetailCarousel__img").attr("src", "https://www.spilepe.eu/img_produkty/nejvetsi/" + vybrano);
+    $(".swiper-slide-active .m-productDetailCarousel__link").attr("href", "https://www.mojespani.cz/img_produkty/velke/" + vybrano);
+    $(".swiper-slide-active .m-productDetailCarousel__img").attr("src", "https://www.mojespani.cz/img_produkty/velke/" + vybrano);
 });
 });
 

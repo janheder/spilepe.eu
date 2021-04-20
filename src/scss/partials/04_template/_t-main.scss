@@ -39,6 +39,14 @@ main{
 @media screen and (max-width:991px){
     .mainTop {
         position: static;
+        margin: 0;
+    }
+    .-noScroll .mainTop {
+        position: fixed;
+        height: 100vh;
+        z-index: 9;
+        top: 0;
+        left: 0;
     }
     .mainTop__menu .o-navProducts {
         top: 0px;
